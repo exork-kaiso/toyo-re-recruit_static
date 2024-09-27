@@ -1,4 +1,3 @@
-<?php ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -27,13 +26,8 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="icon"
-      href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png"
-      id="favicon"
-    />
+    <link rel="icon" href="/images/favicon.png" id="favicon" />
     <link rel="apple-touch-icon" sizes="256x256" href="" />
-    <?php wp_head(); ?>
   </head>
   <body class="">
     <!-- <div id="loading" class="loading-container">
@@ -43,21 +37,18 @@
     <header id="header">
       <div class="header-container">
         <h1 class="header-title">
-          <a
-            href="<?php echo esc_url( home_url( '/' ) ); ?>"
-            class="header-title-link"
-          >
+          <a href="/" class="header-title-link">
             <picture>
               <source
                 media="(max-width:1599px)"
-                srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                srcset="/images/img_header-_logo.png"
               />
               <source
                 media="(min-width:1600px)"
-                srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                srcset="/images/img_header-_logo.png"
               />
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                src="/images/img_header-_logo.png"
                 alt="東洋不動産株式会社"
                 class="header-title-logo"
               />
@@ -67,73 +58,49 @@
         </h1>
         <ul class="header-list">
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
-            >
+            <a class="header-list-link" href="/about/">
               <span class="en">ABOUT US</span>
               <span class="jp">私たちが目指すもの</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
-            >
+            <a class="header-list-link" href="/uniqueness/">
               <span class="en">UNIQUENESS</span>
               <span class="jp">当社の特徴</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
-            >
+            <a class="header-list-link" href="/message/">
               <span class="en">MESSAGE</span>
               <span class="jp">社長メッセージ</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
-            >
+            <a class="header-list-link" href="/people/">
               <span class="en">PEOPLE</span>
               <span class="jp">働く仲間たち</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
-            >
+            <a class="header-list-link" href="/crosstalk/">
               <span class="en">CROSS TALK</span>
               <span class="jp">会社の雰囲気</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
-            >
+            <a class="header-list-link" href="/career/">
               <span class="en">CAREER PATH</span>
               <span class="jp">キャリアパス</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
-            >
+            <a class="header-list-link" href="/recruitment/">
               <span class="en">RECRUIT</span>
               <span class="jp">採用情報</span>
             </a>
           </li>
           <li class="header-list-item">
-            <a
-              class="header-list-link entry"
-              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
-            >
+            <a class="header-list-link entry" href="/recruitment/#recruitInfo">
               <span class="en">ENTRY</span>
             </a>
           </li>
@@ -151,12 +118,9 @@
           <div class="firstview-content spacer">
             <p class="firstview-scroll">SCROLL</p>
           </div>
-          <!-- <div class="firstview-content image">
-			<img src="<?php // echo get_stylesheet_directory_uri(); ?>/images/img_front-page_firstview.png" alt="" class="firstview-image">
-		</div> -->
           <div class="firstview-content video">
             <video
-              src="<?php echo get_stylesheet_directory_uri(); ?>/video/fv01_movie.mp4"
+              src="/video/fv01_movie.mp4"
               autoplay
               loop
               muted
@@ -164,7 +128,7 @@
               class="firstview-video"
             >
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_firstview.png"
+                src="/images/img_front-page_firstview.png"
                 alt=""
                 class="firstview-image"
               />
@@ -190,7 +154,7 @@
             </h2>
             <a class="video-link js-video-link">
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_video-link.png"
+                src="/images/img_front-page_video-link.png"
                 alt=""
                 class="video-link-image"
               />
@@ -248,14 +212,11 @@
             </p>
             <div class="about-frame">
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_about-image.png"
+                src="/images/img_front-page_about-image.png"
                 alt=""
                 class="about-image"
               />
-              <a
-                href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
-                class="about-link"
-              >
+              <a href="/about/" class="about-link">
                 <span class="text">VIEW ABOUT US</span>
                 <span class="pict">→</span>
               </a>
@@ -276,15 +237,12 @@
             </p>
             <div class="uniqueness-frame">
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_uniqueness-image.png"
+                src="/images/img_front-page_uniqueness-image.png"
                 alt=""
                 class="uniqueness-image"
               />
             </div>
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
-              class="uniqueness-link"
-            >
+            <a href="/uniqueness/" class="uniqueness-link">
               <span class="text">VIEW UNIQUENESS</span>
               <span class="pict">→</span>
             </a>
@@ -301,14 +259,11 @@
             </h2>
             <div class="message-frame">
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_message-image.png"
+                src="/images/img_front-page_message-image.png"
                 alt=""
                 class="message-image"
               />
-              <a
-                href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
-                class="message-link"
-              >
+              <a href="/message/" class="message-link">
                 <span class="text">VIEW MESSAGE</span>
                 <span class="pict">→</span>
               </a>
@@ -327,13 +282,10 @@
 
             <ul class="people-list">
               <li class="people-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>people/fujishiro/"
-                  class="people-item-link"
-                >
+                <a href="/people/fujishiro/" class="people-item-link">
                   <div class="people-image-frame">
                     <img
-                      src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_people-image-01.png"
+                      src="/images/img_front-page_people-image-01.png"
                       alt=""
                       class="people-image"
                     />
@@ -348,13 +300,10 @@
                 </a>
               </li>
               <li class="people-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>people/tsuduki/"
-                  class="people-item-link"
-                >
+                <a href="/people/tsuduki/" class="people-item-link">
                   <div class="people-image-frame">
                     <img
-                      src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_people-image-02.png"
+                      src="/images/img_front-page_people-image-02.png"
                       alt=""
                       class="people-image"
                     />
@@ -369,13 +318,10 @@
                 </a>
               </li>
               <li class="people-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>people/koyama/"
-                  class="people-item-link"
-                >
+                <a href="/people/koyama/" class="people-item-link">
                   <div class="people-image-frame">
                     <img
-                      src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_people-image-03.png"
+                      src="/images/img_front-page_people-image-03.png"
                       alt=""
                       class="people-image"
                     />
@@ -391,10 +337,7 @@
               </li>
             </ul>
 
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
-              class="people-link"
-            >
+            <a href="/people/" class="people-link">
               <span class="text">VIEW ALL PEOPLE</span>
               <span class="pict">→</span>
             </a>
@@ -410,14 +353,11 @@
               <span class="en">CROSS TALK</span>
             </h2>
             <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_crosstalk-image.png"
+              src="/images/img_front-page_crosstalk-image.png"
               alt=""
               class="crosstalk-image"
             />
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
-              class="crosstalk-link"
-            >
+            <a href="/crosstalk/" class="crosstalk-link">
               <span class="text">VIEW CROSS TALK</span>
               <span class="pict">→</span>
             </a>
@@ -433,14 +373,11 @@
               <span class="en">CAREER PATH</span>
             </h2>
             <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_career-image.png"
+              src="/images/img_front-page_career-image.png"
               alt=""
               class="career-image"
             />
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
-              class="career-link"
-            >
+            <a href="/career/" class="career-link">
               <span class="text">VIEW CAREER</span>
               <span class="pict">→</span>
             </a>
@@ -452,14 +389,11 @@
         <div class="recruitment-container">
           <div class="recruitment-content">
             <img
-              src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_front-page_recruitment-image.png"
+              src="/images/img_front-page_recruitment-image.png"
               alt=""
               class="recruitment-image"
             />
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
-              class="recruitment-link"
-            >
+            <a href="/recruitment/" class="recruitment-link">
               <div class="recruitment-label">
                 <span class="jp">採用情報</span>
                 <span class="en">RECRUIT</span>
@@ -535,83 +469,56 @@
       <section class="bg-container-footer">
         <div class="footer-container">
           <div class="footer-content">
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
-              class="footer-entry"
-            >
+            <a href="/recruitment/#recruitInfo" class="footer-entry">
               <span class="text">ENTRY</span>
               <span class="pict"></span>
               <span class="bar"></span>
             </a>
             <ul class="footer-list">
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
-                  class="footer-item-link"
-                >
+                <a href="/about/" class="footer-item-link">
                   <span class="en">ABOUT US</span>
                   <span class="jp">私たちが目指すもの</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
-                  class="footer-item-link"
-                >
+                <a href="/uniqueness/" class="footer-item-link">
                   <span class="en">UNIQUENESS</span>
                   <span class="jp">当社の特徴</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
-                  class="footer-item-link"
-                >
+                <a href="/message/" class="footer-item-link">
                   <span class="en">MESSAGE</span>
                   <span class="jp">社長メッセージ</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
-                  class="footer-item-link"
-                >
+                <a href="/people/" class="footer-item-link">
                   <span class="en">PEOPLE</span>
                   <span class="jp">働く仲間たち</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
-                  class="footer-item-link"
-                >
+                <a href="/crosstalk/" class="footer-item-link">
                   <span class="en">CROSS TALK</span>
                   <span class="jp">会社の雰囲気</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
-                  class="footer-item-link"
-                >
+                <a href="/career/" class="footer-item-link">
                   <span class="en">CAREER PATH</span>
                   <span class="jp">キャリアパス</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
-                  class="footer-item-link"
-                >
+                <a href="/recruitment/" class="footer-item-link">
                   <span class="en">RECRUIT</span>
                   <span class="jp">採用情報</span>
                 </a>
               </li>
               <li class="footer-item">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
-                  class="footer-item-link"
-                >
+                <a href="/recruitment/#recruitInfo" class="footer-item-link">
                   <span class="en">ENTRY</span>
                   <span class="jp">エントリー</span>
                 </a>
@@ -619,12 +526,9 @@
             </ul>
             <div class="footer-separator">
               <div class="footer-logo">
-                <a
-                  href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                  class="footer-logo-link"
-                >
+                <a href="/" class="footer-logo-link">
                   <img
-                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg"
+                    src="/images/img_footer_logo.svg"
                     alt=""
                     class="footer-logo-image"
                   />
@@ -664,10 +568,7 @@
               >
             </div>
             <a href="#reveal" class="footer-totop">
-              <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg"
-                alt=""
-              />
+              <img src="/images/img_footer_totop.svg" alt="" />
             </a>
           </div>
         </div>
@@ -680,21 +581,18 @@
       <dialog class="dialog js-dialog is-can-scroll">
         <div class="dialog-content">
           <h2 class="dialog-title">
-            <a
-              href="<?php echo esc_url( home_url( '/' ) ); ?>"
-              class="dialog-title-link"
-            >
+            <a href="/" class="dialog-title-link">
               <picture>
                 <source
                   media="(max-width:1599px)"
-                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                  srcset="/images/img_header-_logo.png"
                 />
                 <source
                   media="(min-width:1600px)"
-                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                  srcset="/images/img_header-_logo.png"
                 />
                 <img
-                  src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                  src="/images/img_header-_logo.png"
                   alt="東洋不動産株式会社"
                   class="dialog-title-logo"
                 />
@@ -704,64 +602,43 @@
           </h2>
           <ul class="dialog-list">
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
-              >
+              <a class="js-dialogLink dialog-link" href="/about/">
                 <span class="en">ABOUT US</span>
                 <span class="jp">私たちが目指すもの</span>
               </a>
             </li>
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
-              >
+              <a class="js-dialogLink dialog-link" href="/uniqueness/">
                 <span class="en">UNIQUENESS</span>
                 <span class="jp">当社の特徴</span>
               </a>
             </li>
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
-              >
+              <a class="js-dialogLink dialog-link" href="/message/">
                 <span class="en">MESSAGE</span>
                 <span class="jp">社長メッセージ</span>
               </a>
             </li>
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
-              >
+              <a class="js-dialogLink dialog-link" href="/people/">
                 <span class="en">PEOPLE</span>
                 <span class="jp">働く仲間たち</span>
               </a>
             </li>
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
-              >
+              <a class="js-dialogLink dialog-link" href="/crosstalk/">
                 <span class="en">CROSS TALK</span>
                 <span class="jp">会社の雰囲気</span>
               </a>
             </li>
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
-              >
+              <a class="js-dialogLink dialog-link" href="/career/">
                 <span class="en">CAREER PATH</span>
                 <span class="jp">キャリアパス</span>
               </a>
             </li>
             <li class="dialog-item">
-              <a
-                class="js-dialogLink dialog-link"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
-              >
+              <a class="js-dialogLink dialog-link" href="/recruitment/">
                 <span class="en">RECRUIT</span>
                 <span class="jp">採用情報</span>
               </a>
@@ -769,7 +646,7 @@
             <li class="dialog-item">
               <a
                 class="js-dialogLink dialog-link entry"
-                href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+                href="/recruitment/#recruitInfo"
               >
                 <span class="en">ENTRY</span>
               </a>
@@ -780,7 +657,5 @@
       </dialog>
     </section>
     <!-- ココまで | #reveal.reveal-container -->
-
-    <?php wp_footer() ?>
   </body>
 </html>

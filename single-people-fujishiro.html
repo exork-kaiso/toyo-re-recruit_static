@@ -1,4 +1,4 @@
-<?php ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -24,9 +24,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=BIZ+UDMincho:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png" id="favicon" />
+		<link rel="icon" href="/images/favicon.png" id="favicon" />
 		<link rel="apple-touch-icon" sizes="256x256" href="" />
-		<?php wp_head(); ?>
+
 	</head>
 	<body class="">
 		<!-- <div id="loading" class="loading-container">
@@ -36,12 +36,12 @@
 		<header id="header">
 			<div class="header-container">
 				<h1 class="header-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-title-link">
+					<a href="/" class="header-title-link">
 						<picture>
-							<source media="(max-width:1599px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<source media="(min-width:1600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
+							<source media="(max-width:1599px)" srcset="/images/img_header-_logo.png" />
+							<source media="(min-width:1600px)" srcset="/images/img_header-_logo.png" />
 							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+								src="/images/img_header-_logo.png"
 								alt="東洋不動産株式会社"
 								class="header-title-logo"
 							/>
@@ -51,49 +51,49 @@
 				</h1>
 				<ul class="header-list">
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>about/">
+						<a class="header-list-link" href="/about/">
 							<span class="en">ABOUT US</span>
 							<span class="jp">私たちが目指すもの</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/">
+						<a class="header-list-link" href="/uniqueness/">
 							<span class="en">UNIQUENESS</span>
 							<span class="jp">当社の特徴</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>message/">
+						<a class="header-list-link" href="/message/">
 							<span class="en">MESSAGE</span>
 							<span class="jp">社長メッセージ</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>people/">
+						<a class="header-list-link" href="/people/">
 							<span class="en">PEOPLE</span>
 							<span class="jp">働く仲間たち</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/">
+						<a class="header-list-link" href="/crosstalk/">
 							<span class="en">CROSS TALK</span>
 							<span class="jp">会社の雰囲気</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>career/">
+						<a class="header-list-link" href="/career/">
 							<span class="en">CAREER PATH</span>
 							<span class="jp">キャリアパス</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/">
+						<a class="header-list-link" href="/recruitment/">
 							<span class="en">RECRUIT</span>
 							<span class="jp">採用情報</span>
 						</a>
 					</li>
 					<li class="header-list-item">
-						<a class="header-list-link entry" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo">
+						<a class="header-list-link entry" href="/recruitment/#recruitInfo">
 							<span class="en">ENTRY</span>
 						</a>
 					</li>
@@ -112,10 +112,10 @@
 	<div class="firstview-container">
 		<div class="firstview-content">
 			<picture>
-				<source media="(max-width:1599px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people_firstview-fujishiro.png" />
-				<source media="(min-width:1600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people_firstview-fujishiro.png" />
+				<source media="(max-width:1599px)" srcset="/images/img_people_firstview-fujishiro.png" />
+				<source media="(min-width:1600px)" srcset="/images/img_people_firstview-fujishiro.png" />
 				<img
-					src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people_firstview-fujishiro.png"
+					src="/images/img_people_firstview-fujishiro.png"
 					alt=""
 					class="firstview-image"
 				/>
@@ -159,7 +159,7 @@
 				<p class="interview-text">元々は不動産業界に絞っていたわけではなく、金融・商社・物流など幅広い業界を見ていました。そんな中、不動産業界で３０年以上のキャリアを持つ親戚をOB訪問しました。そこで他の業界の人とは違う雰囲気を感じ、不動産の仲介業に興味を持ちました。その際に、私が興味を持っていた不動産会社を共有したところ、「東洋不動産はすごくいい会社だよ」と教えてもらい、選考を受けることにしました。<br /><br />実際に説明会や選考を受けてみると、担当者の方々とOB訪問した親戚の雰囲気が似ているのが印象的でした。当時、不動産業界といえばブラック企業というイメージがありましたが、先輩方の姿を見る限り、ブラック企業で働いているような印象はありませんでした。しかも、当時は１回あたり1時間〜2時間の面接が7回あり（※現在、新卒採用は4次面接まで）、仲介営業の方と話す機会もありました。日々の業務で忙しいにも関わらず、嫌な顔ひとつせず、学生の私とじっくり向き合ってくれたのは東洋不動産だけでした。<br /><br />面接を通じて、ホームページやSNSではわからない「仕事へのプライド」や「誠実さ」が伝わり、私もこの環境で自己研鑽していきたいという思いで入社を決めました。</p>
 			</div>
 			<div class="interview-content image">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people-fujishiro_01.png" alt="" class="interview-image">
+				<img src="/images/img_people-fujishiro_01.png" alt="" class="interview-image">
 			</div>
 		</div>
 		<div class="interview-offset">
@@ -169,7 +169,7 @@
 				<p class="interview-text">ある上司のエピソードですが、お取引先の本社や新拠点の建設、解体、移転など、会社の不動産に関すること全てに携わっているんですね。まさに事業用不動産のプロフェッショナルとして、お客さまから信頼されている先輩に尊敬の念を抱きました。先輩のように20年、30年とお客さまから末永くお付き合いしていただける人間になりたいと思いました。</p>
 			</div>
 			<div class="interview-content image">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people-fujishiro_02.png" alt="" class="interview-image">
+				<img src="/images/img_people-fujishiro_02.png" alt="" class="interview-image">
 			</div>
 		</div>
 		<div class="interview-offset">
@@ -179,7 +179,7 @@
 				<p class="interview-text">不動産売買には、素人では見抜けないリスクがはらむケースがよくあります。売主様と買主様の間に介在して、伝書鳩のように物件情報を伝えるだけでは、本当の価値を届けることはできません。取引後に問題が発覚するのでは手遅れですし、プロとしての介在価値はゼロです。<br /><br />そうならないためにも、プロの目から見て、「ここはちょっと気になるな」「ちょっとおかしいな」と感じたことはしっかり調べて、お客さまに共有することが大事です。目先の利益ではなく、お客さまの利益を第一に考え、リスクやデメリットをしっかり伝えていくことが末永いお付き合いにつながると思います。</p>
 			</div>
 			<div class="interview-content image">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people-fujishiro_03.png" alt="" class="interview-image">
+				<img src="/images/img_people-fujishiro_03.png" alt="" class="interview-image">
 			</div>
 		</div>
 		<div class="interview-offset">
@@ -189,7 +189,7 @@
 				<p class="interview-text">実際に私が仲介した物件で、お客さまが新しい企業活動をスタートさせている光景はまさに感極まる瞬間です。正直、無事に取引が終わるまではプレッシャーに押しつぶされそうになることもあります。事業用不動産は個人用不動産よりも金額・規模ともにはるかに大きいので、プロとしての責任も伴います。<br /><br />でも、最終的に取引が終わって、お客さまからお礼の電話が来たときには非常に嬉しいですね。自分が仲介した物件で新しい事業が展開されるというのは、まさに事業用不動産でしか味わえない醍醐味だと思います。</p>
 			</div>
 			<div class="interview-content image">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people-fujishiro_04.png" alt="" class="interview-image">
+				<img src="/images/img_people-fujishiro_04.png" alt="" class="interview-image">
 			</div>
 		</div>
 		<div class="interview-offset">
@@ -199,7 +199,7 @@
 				<p class="interview-text">入社して１０年が経ち、一つの取引を確実に完遂できるようにはなりました。それでもまだまだ経験不足だなと感じます。いきなりレベルアップするとは思っていないので、目の前にある仕事を丁寧に取り組みながら、知識・経験を積み重ねていきたいと思います。その積み重ねによって、先輩方のようにお客さまと末永い関係を築いて、「藤代に任せたら安心だ」と一任してもらえる存在になっていきたいです。</p>
 			</div>
 			<div class="interview-content image">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people-fujishiro_05.png" alt="" class="interview-image">
+				<img src="/images/img_people-fujishiro_05.png" alt="" class="interview-image">
 			</div>
 		</div>
 	</div>
@@ -212,7 +212,7 @@
 				<h2 class="message-head">MESSAGE</h2>
 				<div class="message-block">
 					<div class="message-item">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_people-fujishiro_message.png" alt="" class="message-item-image">
+						<img src="/images/img_people-fujishiro_message.png" alt="" class="message-item-image">
 					</div>
 					<div class="message-item">
 						<p class="message-item-text">当社は国内最大のメガバンクの緊密会社で、そのような環境で１年目から事業用不動産の売買仲介を経験できる珍しい会社です。<br />６０年以上の歴史と伝統、豊富な取引実績がありますので、自分自身のレベルアップにつながる環境があります。<br />自分自身を高めていきたい人には最高の環境だと思います。</p>
@@ -220,7 +220,7 @@
 				</div>
 			</div>
 			<div class="message-content button">
-				<button class="message-button" type="button" onclick="location.href='<?php echo esc_url( home_url( '/' ) ); ?>people/'">
+				<button class="message-button" type="button" onclick="location.href='/people/'">
 					<span class="text">VIEW ALL PEOPLE</span>
 					<span class="pict">→</span>
 				</button>
@@ -232,56 +232,56 @@
 		<section class="bg-container-footer">
 			<div class="footer-container">
 				<div class="footer-content">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-entry">
+					<a href="/recruitment/#recruitInfo" class="footer-entry">
 						<span class="text">ENTRY</span>
 						<span class="pict"></span>
 						<span class="bar"></span>
 					</a>
 					<ul class="footer-list">
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/" class="footer-item-link">
+							<a href="/about/" class="footer-item-link">
 								<span class="en">ABOUT US</span>
 								<span class="jp">私たちが目指すもの</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/" class="footer-item-link">
+							<a href="/uniqueness/" class="footer-item-link">
 								<span class="en">UNIQUENESS</span>
 								<span class="jp">当社の特徴</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>message/" class="footer-item-link">
+							<a href="/message/" class="footer-item-link">
 								<span class="en">MESSAGE</span>
 								<span class="jp">社長メッセージ</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>people/" class="footer-item-link">
+							<a href="/people/" class="footer-item-link">
 								<span class="en">PEOPLE</span>
 								<span class="jp">働く仲間たち</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/" class="footer-item-link">
+							<a href="/crosstalk/" class="footer-item-link">
 								<span class="en">CROSS TALK</span>
 								<span class="jp">会社の雰囲気</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>career/" class="footer-item-link">
+							<a href="/career/" class="footer-item-link">
 								<span class="en">CAREER PATH</span>
 								<span class="jp">キャリアパス</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/" class="footer-item-link">
+							<a href="/recruitment/" class="footer-item-link">
 								<span class="en">RECRUIT</span>
 								<span class="jp">採用情報</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-item-link">
+							<a href="/recruitment/#recruitInfo" class="footer-item-link">
 								<span class="en">ENTRY</span>
 								<span class="jp">エントリー</span>
 							</a>
@@ -289,8 +289,8 @@
 					</ul>
 					<div class="footer-separator">
 						<div class="footer-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo-link">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg" alt="" class="footer-logo-image">
+							<a href="/" class="footer-logo-link">
+								<img src="/images/img_footer_logo.svg" alt="" class="footer-logo-image">
 							</a>
 						</div>
 						<div class="footer-location">
@@ -317,7 +317,7 @@
 						<a href="https://www.toyo-re.co.jp/" target="_blank" class="footer-location-external">コーポレートサイトへ</a>
 					</div>
 					<a href="#reveal" class="footer-totop">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg" alt="">
+						<img src="/images/img_footer_totop.svg" alt="">
 					</a>
 				</div>
 			</div>
@@ -330,12 +330,12 @@
 		<dialog class="dialog js-dialog is-can-scroll">
 			<div class="dialog-content">
 				<h2 class="dialog-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="dialog-title-link">
+					<a href="/" class="dialog-title-link">
 						<picture>
-							<source media="(max-width:1599px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<source media="(min-width:1600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
+							<source media="(max-width:1599px)" srcset="/images/img_header-_logo.png" />
+							<source media="(min-width:1600px)" srcset="/images/img_header-_logo.png" />
 							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+								src="/images/img_header-_logo.png"
 								alt="東洋不動産株式会社"
 								class="dialog-title-logo"
 							/>
@@ -345,49 +345,49 @@
 				</h2>
 				<ul class="dialog-list">
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>about/">
+						<a class="js-dialogLink dialog-link" href="/about/">
 							<span class="en">ABOUT US</span>
 							<span class="jp">私たちが目指すもの</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/">
+						<a class="js-dialogLink dialog-link" href="/uniqueness/">
 							<span class="en">UNIQUENESS</span>
 							<span class="jp">当社の特徴</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>message/">
+						<a class="js-dialogLink dialog-link" href="/message/">
 							<span class="en">MESSAGE</span>
 							<span class="jp">社長メッセージ</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>people/">
+						<a class="js-dialogLink dialog-link" href="/people/">
 							<span class="en">PEOPLE</span>
 							<span class="jp">働く仲間たち</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/">
+						<a class="js-dialogLink dialog-link" href="/crosstalk/">
 							<span class="en">CROSS TALK</span>
 							<span class="jp">会社の雰囲気</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>career/">
+						<a class="js-dialogLink dialog-link" href="/career/">
 							<span class="en">CAREER PATH</span>
 							<span class="jp">キャリアパス</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/">
+						<a class="js-dialogLink dialog-link" href="/recruitment/">
 							<span class="en">RECRUIT</span>
 							<span class="jp">採用情報</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link entry" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo">
+						<a class="js-dialogLink dialog-link entry" href="/recruitment/#recruitInfo">
 							<span class="en">ENTRY</span>
 						</a>
 					</li>
@@ -402,56 +402,56 @@
 		<section class="bg-container-footer">
 			<div class="footer-container">
 				<div class="footer-content">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-entry">
+					<a href="/recruitment/#recruitInfo" class="footer-entry">
 						<span class="text">ENTRY</span>
 						<span class="pict"></span>
 						<span class="bar"></span>
 					</a>
 					<ul class="footer-list">
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/" class="footer-item-link">
+							<a href="/about/" class="footer-item-link">
 								<span class="en">ABOUT US</span>
 								<span class="jp">私たちが目指すもの</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/" class="footer-item-link">
+							<a href="/uniqueness/" class="footer-item-link">
 								<span class="en">UNIQUENESS</span>
 								<span class="jp">当社の特徴</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>message/" class="footer-item-link">
+							<a href="/message/" class="footer-item-link">
 								<span class="en">MESSAGE</span>
 								<span class="jp">社長メッセージ</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>people/" class="footer-item-link">
+							<a href="/people/" class="footer-item-link">
 								<span class="en">PEOPLE</span>
 								<span class="jp">働く仲間たち</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/" class="footer-item-link">
+							<a href="/crosstalk/" class="footer-item-link">
 								<span class="en">CROSS TALK</span>
 								<span class="jp">会社の雰囲気</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>career/" class="footer-item-link">
+							<a href="/career/" class="footer-item-link">
 								<span class="en">CAREER PATH</span>
 								<span class="jp">キャリアパス</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/" class="footer-item-link">
+							<a href="/recruitment/" class="footer-item-link">
 								<span class="en">RECRUIT</span>
 								<span class="jp">採用情報</span>
 							</a>
 						</li>
 						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-item-link">
+							<a href="/recruitment/#recruitInfo" class="footer-item-link">
 								<span class="en">ENTRY</span>
 								<span class="jp">エントリー</span>
 							</a>
@@ -459,8 +459,8 @@
 					</ul>
 					<div class="footer-separator">
 						<div class="footer-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo-link">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg" alt="" class="footer-logo-image">
+							<a href="/" class="footer-logo-link">
+								<img src="/images/img_footer_logo.svg" alt="" class="footer-logo-image">
 							</a>
 						</div>
 						<div class="footer-location">
@@ -487,7 +487,7 @@
 						<a href="https://www.toyo-re.co.jp/" target="_blank" class="footer-location-external">コーポレートサイトへ</a>
 					</div>
 					<a href="#reveal" class="footer-totop">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg" alt="">
+						<img src="/images/img_footer_totop.svg" alt="">
 					</a>
 				</div>
 			</div>
@@ -500,12 +500,12 @@
 		<dialog class="dialog js-dialog is-can-scroll">
 			<div class="dialog-content">
 				<h2 class="dialog-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="dialog-title-link">
+					<a href="/" class="dialog-title-link">
 						<picture>
-							<source media="(max-width:1599px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<source media="(min-width:1600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
+							<source media="(max-width:1599px)" srcset="/images/img_header-_logo.png" />
+							<source media="(min-width:1600px)" srcset="/images/img_header-_logo.png" />
 							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+								src="/images/img_header-_logo.png"
 								alt="東洋不動産株式会社"
 								class="dialog-title-logo"
 							/>
@@ -515,49 +515,49 @@
 				</h2>
 				<ul class="dialog-list">
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>about/">
+						<a class="js-dialogLink dialog-link" href="/about/">
 							<span class="en">ABOUT US</span>
 							<span class="jp">私たちが目指すもの</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/">
+						<a class="js-dialogLink dialog-link" href="/uniqueness/">
 							<span class="en">UNIQUENESS</span>
 							<span class="jp">当社の特徴</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>message/">
+						<a class="js-dialogLink dialog-link" href="/message/">
 							<span class="en">MESSAGE</span>
 							<span class="jp">社長メッセージ</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>people/">
+						<a class="js-dialogLink dialog-link" href="/people/">
 							<span class="en">PEOPLE</span>
 							<span class="jp">働く仲間たち</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/">
+						<a class="js-dialogLink dialog-link" href="/crosstalk/">
 							<span class="en">CROSS TALK</span>
 							<span class="jp">会社の雰囲気</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>career/">
+						<a class="js-dialogLink dialog-link" href="/career/">
 							<span class="en">CAREER PATH</span>
 							<span class="jp">キャリアパス</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/">
+						<a class="js-dialogLink dialog-link" href="/recruitment/">
 							<span class="en">RECRUIT</span>
 							<span class="jp">採用情報</span>
 						</a>
 					</li>
 					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link entry" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo">
+						<a class="js-dialogLink dialog-link entry" href="/recruitment/#recruitInfo">
 							<span class="en">ENTRY</span>
 						</a>
 					</li>
@@ -569,6 +569,6 @@
 		</section>
 		<!-- ココまで | #reveal.reveal-container -->
 
-		<?php wp_footer() ?>
+
 	</body>
 </html>
