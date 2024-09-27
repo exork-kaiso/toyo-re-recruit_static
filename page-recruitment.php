@@ -55,7 +55,7 @@
 	</div>
 </section>
 
-<section class="bg-container-welfare">
+<section id="welfare" class="bg-container-welfare">
 	<div class="welfare-container">
 		<div class="welfare-content">
 			<h2 class="welfare-title">「福利厚生」及び「働き方改革」</h2>
@@ -75,7 +75,7 @@
 				</li>
 				<li class="welfare-item">
 					<h3 class="welfare-item-head">交通費</h3>
-					<p class="welfare-item-description">通勤時の交通費については、全額支給致します。</p>
+					<p class="welfare-item-description">通勤時の交通費については、全額支給いたします。</p>
 				</li>
 				<li class="welfare-item">
 					<h3 class="welfare-item-head">時間外手当</h3>
@@ -127,7 +127,7 @@
 				</li>
 				<li class="welfare-item">
 					<h3 class="welfare-item-head">ベースアップ</h3>
-					<p class="welfare-item-description">2024年4月に、全職員を対象にベースアップ(平均約6％・昇格等を含む合算賃上率11％)を実施致しました。</p>
+					<p class="welfare-item-description">2024年4月に、全職員を対象にベースアップ(平均約6％・昇格等を含む合算賃上率11％)を実施いたしました。</p>
 				</li>
 				<li class="welfare-item">
 					<h3 class="welfare-item-head">在宅勤務</h3>
@@ -290,7 +290,7 @@
 									<span class="text">二次面接</span>
 								</div>
 								<div class="description">
-									<p>人事部との役員および部長との面接です。</p>
+									<p>人事部の役員および部長との面接です。</p>
 								</div>
 							</div>
 						</li>

@@ -551,12 +551,13 @@
 
       font-size: 14px;
       line-height: 150%;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.1em;
       color: variables.$indigo-a;
       text-align: center;
 
       @include mixin.mq(md) {
         font-size: 24px;
+        letter-spacing: 0.15em;
       }
     }
 
@@ -678,9 +679,6 @@
       background-color: variables.$indigo-a;
       text-align: center;
       width: fit-content;
-
-      @include mixin.mq(md) {
-      }
 
       @include mixin.mq(lg) {
         position: absolute;
@@ -1003,6 +1001,10 @@
 
       @include mixin.mq(sm) {
         width: calc(100% - 132px);
+      }
+
+      a {
+        text-decoration: underline;
       }
     }
   }

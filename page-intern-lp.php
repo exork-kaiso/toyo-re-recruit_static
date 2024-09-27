@@ -94,7 +94,7 @@
 						<p class="label">#02</p>
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_intern-lp_reason-02.png" alt="" class="image">
 						<div class="info">
-							<h3 class="head">法人間取引、事業用不動産の<br class="" />理解が深まる</h3>
+							<h3 class="head">法人間取引、事業用不動産の<br class="sm-block" />理解が深まる</h3>
 							<p class="text">誰と取引するか、どんな商材を扱うかによって、仕事の醍醐味や今後身に付くスキルも大きく変わってきます。</p>
 						</div>
 					</a>
@@ -117,7 +117,7 @@
 					<span class="label">理由 #1</span>
 					<h2 class="head">業界・職種の理解が深まる</h2>
 				</div>
-				<p class="reason-section-lede">不動産の業界や仕事を理解することで、<br class="" />仕事選びの選択肢が広がり、<br class="" />より自分に合った仕事を選べるようになります</p>
+				<p class="reason-section-lede">不動産の業界や仕事を理解することで、<br class="md-block" />仕事選びの選択肢が広がり、<br class="md-block" />より自分に合った仕事を選べるようになります</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_intern-lp_reason-01.png" alt="" class="reason-section-image">
 				<p class="reason-section-description">若い頃というのは、世の中にどういう仕事があるのかを知らなければ、自分の適性もわかりません。そのような状態で自分に合った仕事を選ぶことには無理があります。特に、不動産業界は一般的に知られていない情報の方が多いので、イメージや知名度だけで選んでしまいがちです。</p>
 				<p class="reason-section-description">一言に不動産業界といっても、開発（いわゆるデベロッパー）、売買、賃貸、管理、仲介とさまざまな領域があります。当然、その領域によっては役割・仕事内容・関わる人たちもだいぶ変わってきます。当社のインターンシップに参加することで、それらの違いを理解することができます。それによって、仕事選びの選択肢も広がり、より自分に合った仕事を選べるようになります。</p>
@@ -125,9 +125,9 @@
 			<div id="reason2" class="reason-content-section">
 				<div class="reason-section-title">
 					<span class="label">理由 #2</span>
-					<h2 class="head">法人間取引、事業用不動産の<br class="" />理解が深まる</h2>
+					<h2 class="head">法人間取引、事業用不動産の<br class="sm-block" />理解が深まる</h2>
 				</div>
-				<p class="reason-section-lede">誰と取引するか、どんな商材を扱うかによって、<br class="" />仕事の醍醐味や今後身に付くスキルも<br class="" />大きく変わってきます。</p>
+				<p class="reason-section-lede">誰と取引するか、<br class="md-block" />どんな商材を扱うかによって、<br class="md-block" />仕事の醍醐味や今後身に付くスキルも<br class="md-block" />大きく変わってきます。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_intern-lp_reason-02.png" alt="" class="reason-section-image">
 				<p class="reason-section-description">東洋不動産は個人向けではなく、法人向けの不動産だけを扱う、業界的にも珍しい会社です。いわゆる法人間取引（BtoB）に特化しています。でも、法人間取引と聞いてもなかなかイメージできないのではないでしょうか？ 特に、不動産業界の法人間取引となると、ほとんどの方がピンとこないでしょう。</p>
 				<p class="reason-section-description">でも、「個人向け不動産」と「法人向け不動産」の違いがわかると、不動産業界の仕事に対する概念が大きく変わります。なぜなら、取り扱う不動産の種類や金額も違えば、取引する相手も違うので、当然ながら仕事内容も異なります。</p>
@@ -139,7 +139,7 @@
 					<span class="label">理由 #3</span>
 					<h2 class="head">座談会を通じてリアルな情報を入手</h2>
 				</div>
-				<p class="reason-section-lede">どんな人たちと一緒に働くか…<br class="" />それも自分に合った会社を選ぶための<br class="" />重要なファクターです。</p>
+				<p class="reason-section-lede">どんな人たちと一緒に働くか…<br class="sm-block" />それも自分に合った会社を選ぶための<br class="sm-block" />重要なファクターです。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_intern-lp_reason-03.png" alt="" class="reason-section-image">
 				<p class="reason-section-description">採用に関する情報というのは、基本的には良いことしか書かれていません。不都合な情報をあえてさらけ出す会社はほとんどないでしょう。当社では、入社してみないとわからないような情報をできるだけ公開していますが、限界もあります。なので、インターンシップでは先輩社員との交流会も実施しています。</p>
 				<p class="reason-section-description">私たちにとっても、入社してくださった社員には長く働いてほしいと思っています。そのためにも、あなたが不安や疑問に感じていることを先輩社員に質問し、解消できる機会を設けています。</p>
@@ -225,7 +225,7 @@
 				</tr>
 				<tr class="">
 					<th class="">福利厚生</th>
-					<td class="">財形貯蓄、退職金制度、共済会、職員持株会、保養施設（会員制リゾート施設）詳しくはこちら</td>
+					<td class="">財形貯蓄、退職金制度、共済会、職員持株会、保養施設（会員制リゾート施設）<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#welfare">詳しくはこちら</a></td>
 				</tr>
 				<tr class="">
 					<th class="">勤務地</th>

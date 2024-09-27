@@ -76,7 +76,7 @@
 							<p class="description">事業用/投資用不動産に特化しているので、完全BtoBです。一般的には、個人向け仲介を経験後、法人向けに異動する企業が多い中、当社では入社時から法人向け仲介業務に携わります。</p>
 						</td>
 						<td class="compare-cell-normal">
-							<h3 class="head">担当するフローによって変わる</h3>
+							<h3 class="head">担当フローによって変わる<br class="">（BtoBメイン）</h3>
 							<p class="description">土地開発ということで、「用地取得」「企画・開発」「販売」の３つに大別されます。どのフローを担当するかにより関わる人たちが変わります。</p>
 						</td>
 					</tr>
@@ -87,11 +87,11 @@
 							<p class="description">住宅は「人生で一番大きな買い物」「一生に一度の買い物」とよく言われます。だからこそ、最終的に「●●さんにお願いします」と成約できたときはやりがいを感じる仕事です。</p>
 						</td>
 						<td class="compare-cell-toyo">
-							<h3 class="head second">顧客の事業の行方を左右する</h3>
+							<h3 class="head second">顧客の事業の行方を左右する<br class="">自社で開発業務を行える</h3>
 							<p class="description">本社・支社・店舗・工場・物流拠点などの不動産は、お客さまの「事業」の重要な経営資源です。<br class="" />「事業」の立ち上げ・成長・拡大・多角化・撤退・縮小などさまざまな戦略ステージで必ず重要なファクターとなります。<br class="" />当社では、お客さま一人ひとりにベストシナリオを提供し、経営課題解決をサポートしています。担当者というレベルではなく、経営パートナーとしての信頼が不可欠です。</p>
 						</td>
 						<td class="compare-cell-normal">
-							<h3 class="head">プロジェクトが大きいだけに<br class="" />分業化されている</h3>
+							<h3 class="head">街を開発し創造する</h3>
 							<p class="description">プロジェクトの規模が大きくなるほど、業務は分業化されます。とはいえ、プロジェクトを計画通りに進めるためには、どの業務も重要です。いずれのフローにおいても「相手との交渉と説得」が不可欠です。</p>
 						</td>
 					</tr>
@@ -158,7 +158,7 @@
 					<p class="glance-item-quote">（2023年度実績）</p>
 				</li>
 				<li class="glance-item gi-13">
-					<h3 class="glance-item-label">持ち家率</h3>
+					<h3 class="glance-item-label">持家率</h3>
 				</li>
 				<li class="glance-item gi-14">
 					<h3 class="glance-item-label">OJT期間</h3>
@@ -269,7 +269,7 @@
 	<div class="dialog-content">
 		<h3 class="glance-dialog-title">出身学部</h3>
 		<div class="glance-dialog-frame">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_uniqueness_glance-image-09-01.png" alt="" class="glance-dialog-image i9-1">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_uniqueness_glance-image-09-01.svg" alt="" class="glance-dialog-image">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_uniqueness_glance-image-09-02.svg" alt="" class="glance-dialog-image">
 		</div>
 		<button class="js-glance-close glance-dialog-close"></button>

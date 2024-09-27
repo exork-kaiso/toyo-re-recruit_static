@@ -110,7 +110,7 @@
 					<span class="label">特長 #1</span>
 					<h2 class="head">法人向け事業用不動産に特化</h2>
 				</div>
-				<p class="reason-section-lede">法人を対象にオフィスビルや<br class="sm-none" />収益用不動産、商業施設、<br class="sm-none" />倉庫などの事業用不動産を<br class="sm-none" />中心に扱っています。</p>
+				<p class="reason-section-lede">法人を対象にオフィスビルや収益用不動産、<br class="md-block" />商業施設、倉庫などの事業用不動産を中心に扱っています。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_forte-01.png" alt="" class="reason-section-image">
 				<p class="reason-section-description">事業用不動産を扱う企業は全国に約7000社ありますが、実際に事業用不動産を扱う担当者はごく少数です。そのような中で、当社はオフィスビル・工場・倉庫・商業施設などの事業用不動産に特化している珍しい会社です。一般的には、個人向け仲介を経験後、法人向け仲介に異動する企業が多い中、当社では入社時から法人向け仲介業務のみに携わることができます。</p>
 				<p class="reason-section-description">また、取扱額は億単位が中心。個人向けの仲介では経験できない規模です。「事業」の立ち上げ・成長・拡大・多角化・撤退・事業承継などさまざまな経営ニーズに対して、事業用不動産のプロフェッショナルとしてサポートしています。</p>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="reason-section-profile-info">
 						<p class="division">東京営業第五部</p>
-						<p class="name">村中 俊公（2024年キャリア入社）</p>
+						<p class="name">村中 俊公<br class="sm-none" />（2024年キャリア入社）</p>
 						<p class="description">前職は大手不動産会社にいたので、事業用物件を扱う部署もありました。でも、そこに携われるのはごく一部の限られた人だけです。東洋不動産のように入社してすぐに事業用不動産を扱える会社は珍しいですね。</p>
 					</div>
 				</div>
@@ -131,7 +131,7 @@
 					<span class="label">特長 #2</span>
 					<h2 class="head">全員が同じ物件を扱える</h2>
 				</div>
-				<p class="reason-section-lede">当社には社内専用の<br class="sm-none" />物件データベースがあり、<br class="" />全員が同じ物件を<br class="sm-none" />扱うことができます。</p>
+				<p class="reason-section-lede">当社には社内専用の物件データベースがあり、<br class="sm-block" />全員が同じ物件を扱うことができます。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_forte-02.png" alt="" class="reason-section-image">
 				<p class="reason-section-description">不動産営業にとって、物件情報ほど貴重なものはありません。一般の不動産仲介会社では、担当者や、一部の限られた人だけで取り扱うことが多いかもしれません。</p>
 				<p class="reason-section-description">しかし、東洋不動産では独自の物件情報データベースを構築し、営業担当者全員がアクセスできるようにしています。そうすることで、目の前のお客さまのニーズに合致した物件を誰もが紹介できるようにしています。</p>
@@ -153,7 +153,7 @@
 					<span class="label">特長 #3</span>
 					<h2 class="head">MUFGルートがある</h2>
 				</div>
-				<p class="reason-section-lede">当社は、MUFG紹介のお客さまを担当できるという、<br class="" />業界的にも珍しい特長があります</p>
+				<p class="reason-section-lede">当社は、MUFG紹介のお客さまを担当できるという、<br class="sm-block" />業界的にも珍しい特長があります</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_forte-03.png" alt="" class="reason-section-image">
 				<p class="reason-section-description">不動産業界に限らず、最も大変で困難なのが<span class="bold">顧客開拓</span>です。でも当社の場合、MUFGルートでの事業用不動産の営業がメインです。銀行からのご紹介ということで、ニーズの確度が高い案件が豊富であることが特長です。</p>
 				<p class="reason-section-description">その分、選り好みせずあらゆる案件依頼にしっかりと応える責任がありますが、幅広い経験を積み、不動産スペシャリストとしての対応力を育めます。さらにMUFG紹介だとお客さまと直接やりとりするので売買条件だけではなく、そのビジョンや想いまでくみ取ることができ、厚い信頼や長い関係性を築く力も身に付けられます。</p>
@@ -241,7 +241,7 @@
 					<span class="label">理由 #1</span>
 					<h2 class="head">「誠実さ」を大切にする風土</h2>
 				</div>
-				<p class="reason-section-lede">部門や個人の目標はあるものの、<br class="" />売上至上主義ではありません。<br class="" />お客さまと長くお付き合い<br class="sm-none" />していくためにも<br class="" />「誠実さ」を大切にしています。</p>
+				<p class="reason-section-lede">部門や個人の目標はあるものの、売上至上主義ではありません。<br class="sm-block" />お客さまと長くお付き合いしていくためにも<br class="sm-block" />「誠実さ」を大切にしています。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_recommend-01.png" alt="" class="reason-section-image">
 				<p class="reason-section-description last">「誠実に価値を届け続ける」<br class="" /><br class="" />これは東洋不動産が設立以来、決して変わることのない姿勢です。<br class="" />売上目標を達成するために自分本意に営業したり、不都合な情報を包み隠したりするようなことはありません。<br class="" /><br class="" />むしろ、お客さまが不利になりそうなら、「この取引はやめましょう」と助言することさえあります。<br class="" /><br class="" />私たちはいつの時代も事業用不動産のプロフェッショナル集団として、お客さまが安心して仕事を依頼できる、そのような存在であり続けたいと思っています。</p>
 			</div>
@@ -250,7 +250,7 @@
 					<span class="label">理由 #2</span>
 					<h2 class="head">いろいろなことに挑戦できる</h2>
 				</div>
-				<p class="reason-section-lede">売買仲介がメインの<br class="sm-none" />会社ではありますが、<br class="sm-none" />近年はリーシング仲介や<br class="sm-none" />不動産投資といった<br class="" />新しい領域にも挑戦しています。</p>
+				<p class="reason-section-lede">売買仲介がメインの会社ではありますが、<br class="sm-block" />近年はリーシング仲介や不動産投資といった<br class="sm-block" />新しい領域にも挑戦しています。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_recommend-02.png" alt="" class="reason-section-image">
 				<p class="reason-section-description last">当社は売買仲介がメインの会社ですが、変化を続ける不動産業界において、お客さまのニーズにお応えするためのサービスを拡充しております。<br class="" /><br class="" />2018年10月にはリーシング営業部を発足し、ビルオーナー様の賃貸ニーズ、事業会社様のオフィス賃借ニーズに幅広く対応しています。賃貸物件検索サービスも新たに開設しました。<br class="" /><br class="" />また、2024年4月には不動産投資部門として投資開発部を発足しました。実際に不動産を購入し、取得した不動産を3年以内を目安にバリューアップをして売却する部署です。発足間もないこともあり、現在は販売用不動産の仕入れを中心に行っている段階です。<br class="" /><br class="" />さまざまなことに挑戦しているので、あなたの経験が大いに活きる場面も多いはずです。</p>
 			</div>
@@ -259,7 +259,7 @@
 					<span class="label">理由 #3</span>
 					<h2 class="head">柔軟な働き方ができる</h2>
 				</div>
-				<p class="reason-section-lede">在宅勤務、時差出勤、<br class="sm-none" />シェアオフィスの利用など、<br class="" />柔軟な働き方ができます。<br class="" />休暇制度も充実しています。</p>
+				<p class="reason-section-lede">在宅勤務、時差出勤、シェアオフィスの利用など、<br class="sm-block" />柔軟な働き方ができます。休暇制度も充実しています。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_recommend-03.png" alt="" class="reason-section-image">
 				<p class="reason-section-description last">時代の変化や社員の要望に応じて、より働きやすい環境整備に努めています。<br class="" /><br class="" />例えば、シェアオフィスを法人契約しているので、お客さまを訪問後、会社に戻らずにシェアオフィスで仕事をして直帰することも可能です。それ以外にも、オフィスカジュアルの導入や在宅勤務、時差出勤、ノー会議デー、育児休職・休暇取得推進、年次有給休暇の「全社取得奨励運動」など、働き方改革に取り組んでいます。</p>
 			</div>
@@ -268,7 +268,7 @@
 					<span class="label">理由 #4</span>
 					<h2 class="head">経営に参画できる</h2>
 				</div>
-				<p class="reason-section-lede">当社ではタウンホールミーティングや若手会、<br class="sm-block" />職員代表制度など、<br class="sm-none" />社員が経営に参画できる<br class="sm-none" />場を設け、経営改革に<br class="sm-none" />取り組んでいます。</p>
+				<p class="reason-section-lede">当社ではタウンホールミーティングや若手会、<br class="sm-block" />職員代表制度など、社員が経営に参画できる<br class="sm-block" />場を設け、経営改革に取り組んでいます。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_recommend-04.png" alt="" class="reason-section-image">
 				<p class="reason-section-description last">2024年4月に中期経営計画を策定した際、経営陣が全国行脚し、全ての社員とコミュニケーションを取りました。社長に直接質問し、その場で回答を得られる機会もありました。社員からは、「どういう方向性で頑張ればいいか確認できた」「自分が疑問に感じていることを解消できた」と大好評でした。<br class="" /><br class="" />他にも、若手社員の声を集約して会社に対して提案する「若手会」、毎年職員代表を選出し、経営層との意見交換の場を設ける「職員代表制度」など、経営に参画できる場を多数設けています。</p>
 			</div>
@@ -277,7 +277,7 @@
 					<span class="label">理由 #5</span>
 					<h2 class="head">堅実な経営</h2>
 				</div>
-				<p class="reason-section-lede">当社の自己資本比率・経常利益率は<br class="" />ともに業界水準を上回っています。<br class="" />給与のベースアップや<br class="" />福利厚生を通して社員に還元しています。</p>
+				<p class="reason-section-lede">当社の自己資本比率・経常利益率は<br class="sm-block" />ともに業界水準を上回っています。<br class="sm-block" />給与のベースアップや<br class="sm-block" />福利厚生を通して社員に還元しています。</p>
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_career-lp_recommend-05.png" alt="" class="reason-section-image">
 				<p class="reason-section-description last">当社の自己資本比率は51.4%（2023年度）、経常利益率は16.3%（2023年度）でした。ともに業界平均を大きく上回っており、安定した経営をしています。<br class="" /><br class="" />当社の業績向上は社員一人ひとりの努力の賜物です。会社の得た利益は、給与のベースアップや設立周年記念（2024年は旅行券10万円支給）、周年記念（勤続年数10年：５日間の休暇＋功労金5万円）などの福利厚生として社員に還元しています。<br class="" /><br class="" /><span class="caution">※2024年4月に全社員を対象にベースアップ（平均約6%、昇格等を含む合算賃上率11%）を実施いたしました</span></p>
 			</div>
@@ -338,7 +338,7 @@
 				</tr>
 				<tr class="">
 					<th class="">福利厚生</th>
-					<td class="">財形貯蓄、退職金制度、共済会、職員持株会、保養施設（会員制リゾート施設）<br class="" />詳しくはこちら</td>
+					<td class="">財形貯蓄、退職金制度、共済会、職員持株会、保養施設（会員制リゾート施設）<br class="" /><a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#welfare">詳しくはこちら</a></td>
 				</tr>
 				<tr class="">
 					<th class="">勤務地</th>
@@ -412,7 +412,7 @@
 					<span class="text">事業部門の役員および部長との面接です。</span></li>
 				<li class="flow-item">
 					<span class="head">二次面接</span>
-					<span class="text">人事部との役員および部長との面接です。</span></li>
+					<span class="text">人事部の役員および部長との面接です。</span></li>
 				<li class="flow-item">
 					<span class="last">結果通知</span></li>
 			</ul>
@@ -421,7 +421,7 @@
 					<h2 class="flow-entry-head">お問い合わせ・応募はこちら</h2>
 				</div>
 				<div class="flow-entry-content">
-					<a href="tel:03-3504-2246" class="flow-entry-link">TEL : 03-3504-2246</a>
+					<a href="tel:03-3504-2282" class="flow-entry-link">TEL : 03-3504-2282</a>
 					<p class="flow-entry-description">【受付】 平日9:00 ～ 17:00</p>
 				</div>
 			</div>
