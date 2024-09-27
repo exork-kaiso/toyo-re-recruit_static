@@ -1,208 +1,449 @@
-<?php
-	get_header(); ?>
+<?php ?>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
 
-<section class="bg-container-firstview">
-	<div class="firstview-container">
-		<div class="firstview-content">
-			<h2 class="firstview-title">
-				<span class="en">MESSAGE</span>
-				<span class="jp">社長メッセージ</span>
-			</h2>
-		</div>
-	</div>
-</section>
+    <!-- <meta name="description" content="ページの説明" /> -->
+    <!-- <meta name="keywords" content="キーワード1, キーワード2, キーワード3" /> -->
+    <!-- <meta property="og:title" content="ページのタイトル" /> -->
+    <!-- <meta property="og:url" content="ページのURL" /> -->
+    <!-- <meta property="og:description" content="ページの説明" /> -->
+    <!-- <meta name="twitter:description" content="ページの説明" /> -->
+    <!-- <meta name="twitter:title" content="ページのタイトル" /> -->
+    <!-- <meta property="og:image" content="/images/common/ogp-image.png" /> -->
+    <!-- <meta property="og:site_name" content="ページのタイトル" /> -->
+    <!-- <meta property="og:type" content="website" /> -->
+    <!-- <meta property="og:locale" content="ja_JP" /> -->
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+    <!-- <meta name="twitter:image" content="/images/common/ogp-image.png" /> -->
 
-<section class="bg-container-message">
-	<div class="message-container">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_message_firstview.png" alt="" class="message-firstview">
-		<p class="message-lede">あなたの"勇気ある挑戦"をサポート・応援していきます。</p>
-		<div class="message-content">
-			<p class="message-text">東洋不動産に興味を持っていただきありがとうございます。<br />今、あなたは、ちょっとした期待と大きな不安を抱いて、このページに来てくれたのではないでしょうか。<br />自分の適職に就きたい、キャリアチェンジしたい、あるいは自分をもっと成長させたい、その場所が東洋不動産にあるのだろうか？<br /><br />どのような気持ちだとしても、「初めての仕事選び」や「キャリアチェンジ」をしようとしているあなたに、少しでもヒントと勇気を与えられればと思っています。<br /><br />当社は、これまで事業用不動産のプロフェッショナル集団として、誠実に価値を届け続けてきました。<br />それは今後も変わらない当社の存在意義・普遍的価値観であり、いつの時代であってもそうあり続けることを目指しています。<br /><br />「夢は正夢」<br /><br />これは2023年のWBC(ワールドベースボールクラシック)で侍JAPANを世界一へと導いた栗山英樹監督の言葉です。私たち東洋不動産は「事業用不動産のプロフェッショナル集団になる」ことを夢見るのではなく、正夢にするべく全員が一丸となって取り組んでいます。努力はすぐには報われません。<br />でも諦めずに「必ずなれる！」と信じて、努力し続けることこそ、プロフェッショナルへの道だと確信しています。<br /><br />もし、私たちの価値観・夢に共感して頂けたなら、あなたの“勇気ある挑戦”をサポート・応援していきます。<br />当社には、あなたがプロとして活躍するための最高の環境があります。<br />いま活躍している先輩方の姿が何よりの証拠です。<br />当サイトでは多くの先輩方の声を載せています。それらの動画やコンテンツをご覧いただき、「この人たちと一緒に働きたい」と思えたら是非ご応募ください。</p>
-			<p class="message-sign">代表取締役社長 宮田 敦</p>
-		</div>
-	</div>
-</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=BIZ+UDMincho:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<section class="bg-container-video">
-	<div class="video-container">
-		<div class="video-content">
-			<div class="video-embed">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/ibubdWq8a-M?si=sZCethE3xF9kPNU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</section>
+    <link
+      rel="icon"
+      href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png"
+      id="favicon"
+    />
+    <link rel="apple-touch-icon" sizes="256x256" href="" />
+    <?php wp_head(); ?>
+  </head>
+  <body class="">
+    <!-- <div id="loading" class="loading-container">
+			<h1 class="loading-head"></h1>
+		</div> -->
 
-		<section class="bg-container-footer">
-			<div class="footer-container">
-				<div class="footer-content">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-entry">
-						<span class="text">ENTRY</span>
-						<span class="pict"></span>
-						<span class="bar"></span>
-					</a>
-					<ul class="footer-list">
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/" class="footer-item-link">
-								<span class="en">ABOUT US</span>
-								<span class="jp">私たちが目指すもの</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/" class="footer-item-link">
-								<span class="en">UNIQUENESS</span>
-								<span class="jp">当社の特徴</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>message/" class="footer-item-link">
-								<span class="en">MESSAGE</span>
-								<span class="jp">社長メッセージ</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>people/" class="footer-item-link">
-								<span class="en">PEOPLE</span>
-								<span class="jp">働く仲間たち</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/" class="footer-item-link">
-								<span class="en">CROSS TALK</span>
-								<span class="jp">会社の雰囲気</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>career/" class="footer-item-link">
-								<span class="en">CAREER PATH</span>
-								<span class="jp">キャリアパス</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/" class="footer-item-link">
-								<span class="en">RECRUIT</span>
-								<span class="jp">採用情報</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-item-link">
-								<span class="en">ENTRY</span>
-								<span class="jp">エントリー</span>
-							</a>
-						</li>
-					</ul>
-					<div class="footer-separator">
-						<div class="footer-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo-link">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg" alt="" class="footer-logo-image">
-							</a>
-						</div>
-						<div class="footer-location">
-							<dl class="footer-location-list">
-								<dt class="footer-location-office">本社</dt>
-								<dd class="footer-location-address">
-									<span class="post">〒105-0001</span>
-									<span class="address">東京都港区虎ノ門2丁目3番17号 虎ノ門2丁目タワー（受付 3階）</span>
-								</dd>
-								<dt class="footer-location-office">大阪本社</dt>
-								<dd class="footer-location-address">
-									<span class="post">〒541-0044</span>
-									<span class="address">大阪市中央区伏見町4丁目4番9号 淀屋橋東洋ビル（受付 5階）</span>
-								</dd>
-								<dt class="footer-location-office">
-								</dt>
-								<dd class="footer-location-address sales">
-									<span class="office">京都営業部</span>
-									<span class="office">名古屋営業部</span>
-									<span class="office">九州営業部</span>
-								</dd>
-							</dl>
-						</div>
-						<a href="https://www.toyo-re.co.jp/" target="_blank" class="footer-location-external">コーポレートサイトへ</a>
-					</div>
-					<a href="#reveal" class="footer-totop">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg" alt="">
-					</a>
-				</div>
-			</div>
-		</section>
+    <header id="header">
+      <div class="header-container">
+        <h1 class="header-title">
+          <a
+            href="<?php echo esc_url( home_url( '/' ) ); ?>"
+            class="header-title-link"
+          >
+            <picture>
+              <source
+                media="(max-width:1599px)"
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+              />
+              <source
+                media="(min-width:1600px)"
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+              />
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                alt="東洋不動産株式会社"
+                class="header-title-logo"
+              />
+            </picture>
+            <span class="header-title-sub">RECRUITING SITE</span>
+          </a>
+        </h1>
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
+            >
+              <span class="en">ABOUT US</span>
+              <span class="jp">私たちが目指すもの</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
+            >
+              <span class="en">UNIQUENESS</span>
+              <span class="jp">当社の特徴</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
+            >
+              <span class="en">MESSAGE</span>
+              <span class="jp">社長メッセージ</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
+            >
+              <span class="en">PEOPLE</span>
+              <span class="jp">働く仲間たち</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
+            >
+              <span class="en">CROSS TALK</span>
+              <span class="jp">会社の雰囲気</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
+            >
+              <span class="en">CAREER PATH</span>
+              <span class="jp">キャリアパス</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
+            >
+              <span class="en">RECRUIT</span>
+              <span class="jp">採用情報</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link entry"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+            >
+              <span class="en">ENTRY</span>
+            </a>
+          </li>
+        </ul>
+        <button class="js-dialog-open header-menu-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
 
-		<footer>
-			<p class="copyright">&copy; 2024 Toyo Real Estate Co., Ltd.</p>
-		</footer>
+    <section id="reveal" class="reveal-container">
+      <section class="bg-container-firstview">
+        <div class="firstview-container">
+          <div class="firstview-content">
+            <h2 class="firstview-title">
+              <span class="en">MESSAGE</span>
+              <span class="jp">社長メッセージ</span>
+            </h2>
+          </div>
+        </div>
+      </section>
 
-		<dialog class="dialog js-dialog is-can-scroll">
-			<div class="dialog-content">
-				<h2 class="dialog-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="dialog-title-link">
-						<picture>
-							<source media="(max-width:1599px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<source media="(min-width:1600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
-								alt="東洋不動産株式会社"
-								class="dialog-title-logo"
-							/>
-						</picture>
-						<span class="dialog-title-sub">RECRUITING SITE</span>
-					</a>
-				</h2>
-				<ul class="dialog-list">
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>about/">
-							<span class="en">ABOUT US</span>
-							<span class="jp">私たちが目指すもの</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/">
-							<span class="en">UNIQUENESS</span>
-							<span class="jp">当社の特徴</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>message/">
-							<span class="en">MESSAGE</span>
-							<span class="jp">社長メッセージ</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>people/">
-							<span class="en">PEOPLE</span>
-							<span class="jp">働く仲間たち</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/">
-							<span class="en">CROSS TALK</span>
-							<span class="jp">会社の雰囲気</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>career/">
-							<span class="en">CAREER PATH</span>
-							<span class="jp">キャリアパス</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/">
-							<span class="en">RECRUIT</span>
-							<span class="jp">採用情報</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link entry" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo">
-							<span class="en">ENTRY</span>
-						</a>
-					</li>
-				</ul>
-				<button class="js-dialog-close dialog-button">閉じる</button>
-			</div>
-		</dialog>
+      <section class="bg-container-message">
+        <div class="message-container">
+          <img
+            src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_message_firstview.png"
+            alt=""
+            class="message-firstview"
+          />
+          <p class="message-lede">
+            あなたの"勇気ある挑戦"をサポート・応援していきます。
+          </p>
+          <div class="message-content">
+            <p class="message-text">
+              東洋不動産に興味を持っていただきありがとうございます。<br />今、あなたは、ちょっとした期待と大きな不安を抱いて、このページに来てくれたのではないでしょうか。<br />自分の適職に就きたい、キャリアチェンジしたい、あるいは自分をもっと成長させたい、その場所が東洋不動産にあるのだろうか？<br /><br />どのような気持ちだとしても、「初めての仕事選び」や「キャリアチェンジ」をしようとしているあなたに、少しでもヒントと勇気を与えられればと思っています。<br /><br />当社は、これまで事業用不動産のプロフェッショナル集団として、誠実に価値を届け続けてきました。<br />それは今後も変わらない当社の存在意義・普遍的価値観であり、いつの時代であってもそうあり続けることを目指しています。<br /><br />「夢は正夢」<br /><br />これは2023年のWBC(ワールドベースボールクラシック)で侍JAPANを世界一へと導いた栗山英樹監督の言葉です。私たち東洋不動産は「事業用不動産のプロフェッショナル集団になる」ことを夢見るのではなく、正夢にするべく全員が一丸となって取り組んでいます。努力はすぐには報われません。<br />でも諦めずに「必ずなれる！」と信じて、努力し続けることこそ、プロフェッショナルへの道だと確信しています。<br /><br />もし、私たちの価値観・夢に共感して頂けたなら、あなたの“勇気ある挑戦”をサポート・応援していきます。<br />当社には、あなたがプロとして活躍するための最高の環境があります。<br />いま活躍している先輩方の姿が何よりの証拠です。<br />当サイトでは多くの先輩方の声を載せています。それらの動画やコンテンツをご覧いただき、「この人たちと一緒に働きたい」と思えたら是非ご応募ください。
+            </p>
+            <p class="message-sign">代表取締役社長 宮田 敦</p>
+          </div>
+        </div>
+      </section>
 
-		</section>
-		<!-- ココまで | #reveal.reveal-container -->
+      <section class="bg-container-video">
+        <div class="video-container">
+          <div class="video-content">
+            <div class="video-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ibubdWq8a-M?si=sZCethE3xF9kPNU5"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<?php wp_footer() ?>
-	</body>
+      <section class="bg-container-footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <a
+              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+              class="footer-entry"
+            >
+              <span class="text">ENTRY</span>
+              <span class="pict"></span>
+              <span class="bar"></span>
+            </a>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
+                  class="footer-item-link"
+                >
+                  <span class="en">ABOUT US</span>
+                  <span class="jp">私たちが目指すもの</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
+                  class="footer-item-link"
+                >
+                  <span class="en">UNIQUENESS</span>
+                  <span class="jp">当社の特徴</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
+                  class="footer-item-link"
+                >
+                  <span class="en">MESSAGE</span>
+                  <span class="jp">社長メッセージ</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
+                  class="footer-item-link"
+                >
+                  <span class="en">PEOPLE</span>
+                  <span class="jp">働く仲間たち</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
+                  class="footer-item-link"
+                >
+                  <span class="en">CROSS TALK</span>
+                  <span class="jp">会社の雰囲気</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
+                  class="footer-item-link"
+                >
+                  <span class="en">CAREER PATH</span>
+                  <span class="jp">キャリアパス</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
+                  class="footer-item-link"
+                >
+                  <span class="en">RECRUIT</span>
+                  <span class="jp">採用情報</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+                  class="footer-item-link"
+                >
+                  <span class="en">ENTRY</span>
+                  <span class="jp">エントリー</span>
+                </a>
+              </li>
+            </ul>
+            <div class="footer-separator">
+              <div class="footer-logo">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>"
+                  class="footer-logo-link"
+                >
+                  <img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg"
+                    alt=""
+                    class="footer-logo-image"
+                  />
+                </a>
+              </div>
+              <div class="footer-location">
+                <dl class="footer-location-list">
+                  <dt class="footer-location-office">本社</dt>
+                  <dd class="footer-location-address">
+                    <span class="post">〒105-0001</span>
+                    <span class="address"
+                      >東京都港区虎ノ門2丁目3番17号 虎ノ門2丁目タワー（受付
+                      3階）</span
+                    >
+                  </dd>
+                  <dt class="footer-location-office">大阪本社</dt>
+                  <dd class="footer-location-address">
+                    <span class="post">〒541-0044</span>
+                    <span class="address"
+                      >大阪市中央区伏見町4丁目4番9号 淀屋橋東洋ビル（受付
+                      5階）</span
+                    >
+                  </dd>
+                  <dt class="footer-location-office"></dt>
+                  <dd class="footer-location-address sales">
+                    <span class="office">京都営業部</span>
+                    <span class="office">名古屋営業部</span>
+                    <span class="office">九州営業部</span>
+                  </dd>
+                </dl>
+              </div>
+              <a
+                href="https://www.toyo-re.co.jp/"
+                target="_blank"
+                class="footer-location-external"
+                >コーポレートサイトへ</a
+              >
+            </div>
+            <a href="#reveal" class="footer-totop">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p class="copyright">&copy; 2024 Toyo Real Estate Co., Ltd.</p>
+      </footer>
+
+      <dialog class="dialog js-dialog is-can-scroll">
+        <div class="dialog-content">
+          <h2 class="dialog-title">
+            <a
+              href="<?php echo esc_url( home_url( '/' ) ); ?>"
+              class="dialog-title-link"
+            >
+              <picture>
+                <source
+                  media="(max-width:1599px)"
+                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                />
+                <source
+                  media="(min-width:1600px)"
+                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                />
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                  alt="東洋不動産株式会社"
+                  class="dialog-title-logo"
+                />
+              </picture>
+              <span class="dialog-title-sub">RECRUITING SITE</span>
+            </a>
+          </h2>
+          <ul class="dialog-list">
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
+              >
+                <span class="en">ABOUT US</span>
+                <span class="jp">私たちが目指すもの</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
+              >
+                <span class="en">UNIQUENESS</span>
+                <span class="jp">当社の特徴</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
+              >
+                <span class="en">MESSAGE</span>
+                <span class="jp">社長メッセージ</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
+              >
+                <span class="en">PEOPLE</span>
+                <span class="jp">働く仲間たち</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
+              >
+                <span class="en">CROSS TALK</span>
+                <span class="jp">会社の雰囲気</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
+              >
+                <span class="en">CAREER PATH</span>
+                <span class="jp">キャリアパス</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
+              >
+                <span class="en">RECRUIT</span>
+                <span class="jp">採用情報</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link entry"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+              >
+                <span class="en">ENTRY</span>
+              </a>
+            </li>
+          </ul>
+          <button class="js-dialog-close dialog-button">閉じる</button>
+        </div>
+      </dialog>
+    </section>
+    <!-- ココまで | #reveal.reveal-container -->
+
+    <?php wp_footer() ?>
+  </body>
 </html>

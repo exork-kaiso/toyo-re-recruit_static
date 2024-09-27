@@ -1,371 +1,696 @@
-<?php
-	get_header(); ?>
+<?php ?>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
 
-<section class="bg-container-firstview">
-	<div class="firstview-container">
-		<div class="firstview-content">
-			<h2 class="firstview-title">
-				<span class="en">CROSS TALK</span>
-				<span class="jp">会社の雰囲気</span>
-			</h2>
-		</div>
-		<nav class="firstview-nav">
-			<ul class="firstview-nav-list">
-				<li class="firstview-nav-item">
-					<a href="#ct1" class="firstview-nav-link">#01<br />中堅社員による座談会</a>
-				</li>
-				<li class="firstview-nav-item">
-					<a href="#ct2" class="firstview-nav-link">#02<br />若手社員による座談会</a>
-				</li>
-				<li class="firstview-nav-item">
-					<a href="#ct3" class="firstview-nav-link">#03<br />キャリア入社社員による座談会</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-</section>
+    <!-- <meta name="description" content="ページの説明" /> -->
+    <!-- <meta name="keywords" content="キーワード1, キーワード2, キーワード3" /> -->
+    <!-- <meta property="og:title" content="ページのタイトル" /> -->
+    <!-- <meta property="og:url" content="ページのURL" /> -->
+    <!-- <meta property="og:description" content="ページの説明" /> -->
+    <!-- <meta name="twitter:description" content="ページの説明" /> -->
+    <!-- <meta name="twitter:title" content="ページのタイトル" /> -->
+    <!-- <meta property="og:image" content="/images/common/ogp-image.png" /> -->
+    <!-- <meta property="og:site_name" content="ページのタイトル" /> -->
+    <!-- <meta property="og:type" content="website" /> -->
+    <!-- <meta property="og:locale" content="ja_JP" /> -->
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+    <!-- <meta name="twitter:image" content="/images/common/ogp-image.png" /> -->
 
-<section id="ct1" class="bg-container-crosstalk">
-	<div class="crosstalk-container">
-		<div class="crosstalk-content">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_crosstalk_firstview-01.png" alt="" class="crosstalk-firstview">
-			<ul class="crosstalk-introduce-list">
-				<li class="crosstalk-introduce-item">
-					<p class="name">児玉 国男</p>
-					<p class="division">大阪営業第三部</p>
-					<p class="joined">2016年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">坂之下 涼太</p>
-					<p class="division">東京営業第三部</p>
-					<p class="joined">2018年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">南口 和輝</p>
-					<p class="division">東京営業第五部</p>
-					<p class="joined">2013年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">山田 貴大</p>
-					<p class="division">京都営業部</p>
-					<p class="joined">2015年新卒入社</p>
-				</li>
-			</ul>
-		</div>
-		<div class="crosstalk-content text">
-			<h2 class="crosstalk-title">
-				<span class="en">CROSS TALK 01</span>
-				<span class="jp">中堅社員による座談会</span>
-			</h2>
-			<p class="crosstalk-description">さまざまなプロジェクトを経験してきた中堅社員が語る、東洋不動産の「仕事の醍醐味」「東洋不動産の良さ」「目指す未来」</p>
-			<div class="crosstalk-agenda-frame">
-				<h3 class="crosstalk-agenda-title">動画のアジェンダ</h3>
-				<ul class="crosstalk-agenda-list">
-					<li class="crosstalk-agenda-item">入社前の不安「営業経験のない自分が事業用不動産を扱えるのか？」</li>
-					<li class="crosstalk-agenda-item">入社のきっかけ「一人の就活生のために、こんなに時間をとってくれる社会人はなかなかいない」</li>
-					<li class="crosstalk-agenda-item">東洋不動産の偉大な先輩たち「OJTで担当してくださった先輩の存在は大きい」</li>
-					<li class="crosstalk-agenda-item">若手を巻き込んだ働き方改革「南口さんのお陰で入社したときから有給取りやすかった」</li>
-					<li class="crosstalk-agenda-item">改善してほしいこと「場所にこだわらず仕事ができるように働き方をアップデートさせたい」</li>
-					<li class="crosstalk-agenda-item">営業に立ちはだかる最初の障壁「どういうアプローチが正解なんだろう…」</li>
-					<li class="crosstalk-agenda-item">最高に嬉しい瞬間「これがあるから何年も営業ができるんだろうね」</li>
-					<li class="crosstalk-agenda-item">誠実に価値を届け続けるために「悪いことほど早く伝えるのが東洋不動産の誠実さ」</li>
-					<li class="crosstalk-agenda-item">当社に向いている人「これがないと伸びない…」</li>
-				</ul>
-			</div>
-			<div class="crosstalk-video-frame">
-				<div class="crosstalk-video-embed">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/2jQae6RAw08?si=VypX5WUC-g_S8-yq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=BIZ+UDMincho:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<section id="ct2" class="bg-container-crosstalk">
-	<div class="crosstalk-container">
-		<div class="crosstalk-content">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_crosstalk_firstview-02.png" alt="" class="crosstalk-firstview">
-			<ul class="crosstalk-introduce-list">
-				<li class="crosstalk-introduce-item">
-					<p class="name">高坂 佳吾</p>
-					<p class="division">東京営業第二部</p>
-					<p class="joined">2021年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">上山 颯一朗</p>
-					<p class="division">大阪営業第二部</p>
-					<p class="joined">2021年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">岡部 沙耶</p>
-					<p class="division">投資運用部</p>
-					<p class="joined">2021年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">今村 颯汰</p>
-					<p class="division">東京営業第五部</p>
-					<p class="joined">2022年新卒入社</p>
-				</li>
-				<li class="crosstalk-introduce-item">
-					<p class="name">前川 涼</p>
-					<p class="division">東京営業第二部</p>
-					<p class="joined">2022年新卒入社</p>
-				</li>
-			</ul>
-		</div>
-		<div class="crosstalk-content text">
-			<h2 class="crosstalk-title">
-				<span class="en">CROSS TALK 02</span>
-				<span class="jp">若手社員による座談会</span>
-			</h2>
-			<p class="crosstalk-description">2年間のOJTを終え、ひとり立ちして間もない若手社員。事業用不動産のプロフェッショナルを目指す彼らの"現在地”に迫ります。</p>
-			<div class="crosstalk-agenda-frame">
-				<h3 class="crosstalk-agenda-title">動画のアジェンダ</h3>
-				<ul class="crosstalk-agenda-list">
-					<li class="crosstalk-agenda-item">入社前の不安「社会人経験のない自分が経営者と仕事できるのか？」</li>
-					<li class="crosstalk-agenda-item">選考時の率直な感想「面接という印象がなくて、雑談みたいだった」</li>
-					<li class="crosstalk-agenda-item">2年間OJTの振り返り「何もできない1年目でも全部の商談に同行できる」</li>
-					<li class="crosstalk-agenda-item">個を尊重した育成「指導員だけでなく、部全体が温かく育ててくれる」</li>
-					<li class="crosstalk-agenda-item">OJT終了後に意識したこと「自分ができることをひたすら繰り返していた」</li>
-					<li class="crosstalk-agenda-item">改善してほしいこと「服装をもう少しカジュアルにしてもいいかな」</li>
-					<li class="crosstalk-agenda-item">やりがいを感じる瞬間「事業拡大のために購入してくださった工場が完成したときは…」</li>
-					<li class="crosstalk-agenda-item">誠実に価値を届け続けるために「入社以来、先輩方から言われ続けていること」</li>
-					<li class="crosstalk-agenda-item">東洋不動産に向いている人「これさえあれば、2年間でOJTで先輩方が一定のラインまで引き上げてくれる」</li>
-				</ul>
-			</div>
-			<div class="crosstalk-video-frame">
-				<div class="crosstalk-video-embed">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/mzJynIxknOs?si=9JlLy-fZuBrEB9KD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    <link
+      rel="icon"
+      href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png"
+      id="favicon"
+    />
+    <link rel="apple-touch-icon" sizes="256x256" href="" />
+    <?php wp_head(); ?>
+  </head>
+  <body class="">
+    <!-- <div id="loading" class="loading-container">
+			<h1 class="loading-head"></h1>
+		</div> -->
 
-<section id="ct3" class="bg-container-crosstalk">
-	<div class="crosstalk-container">
-		<div class="crosstalk-content">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_crosstalk_firstview-03.png" alt="" class="crosstalk-firstview">
-			<ul class="crosstalk-introduce-list">
-				<li class="crosstalk-introduce-item short">
-					<p class="name">村中 俊公</p>
-					<p class="division">東京営業第五部</p>
-					<p class="joined">2024年キャリア入社</p>
-				</li>
-				<li class="crosstalk-introduce-item short">
-					<p class="name">波多腰 昌記</p>
-					<p class="division">名古屋営業部</p>
-					<p class="joined">2023年キャリア入社</p>
-				</li>
-				<li class="crosstalk-introduce-item short">
-					<p class="name">廣田 淳也</p>
-					<p class="division">営業企画部</p>
-					<p class="joined">2023年キャリア入社</p>
-				</li>
-				<li class="crosstalk-introduce-item short">
-					<p class="name">堀場 俊行</p>
-					<p class="division">リーシング営業部</p>
-					<p class="joined">2018年キャリア入社</p>
-				</li>
-			</ul>
-		</div>
-		<div class="crosstalk-content text">
-			<h2 class="crosstalk-title">
-				<span class="en">CROSS TALK 03</span>
-				<span class="jp">キャリア入社社員による座談会</span>
-			</h2>
-			<p class="crosstalk-description">他社での経験があるからこそわかる、東洋不動産の「良さ」「課題」「可能性」について包み隠さずに語ってもらいました。</p>
-			<div class="crosstalk-agenda-frame">
-				<h3 class="crosstalk-agenda-title">動画のアジェンダ</h3>
-				<ul class="crosstalk-agenda-list">
-					<li class="crosstalk-agenda-item">入社前の不安「他社から来た人間を受け入れてくれるのか…？」</li>
-					<li class="crosstalk-agenda-item">東洋不動産の魅力「ほとんどの不動産会社と違うところ」</li>
-					<li class="crosstalk-agenda-item">東洋不動産の課題「できることが目の前にいっぱいあるのに…」</li>
-					<li class="crosstalk-agenda-item">経営に参画している実感が持てる「社長に質問できて、その場で直接回答してくれる」</li>
-					<li class="crosstalk-agenda-item">職場の雰囲気「前職では『あの人機嫌悪いから話しかけるな』ということがあったけど…」</li>
-					<li class="crosstalk-agenda-item">嬉しい瞬間「たくさんの不動産会社がある中で、当社を選んでいただける喜び」</li>
-					<li class="crosstalk-agenda-item">東洋不動産に根付く誠実さ「数字のために売らないといけないという文化がない」</li>
-				</ul>
-			</div>
-			<div class="crosstalk-video-frame">
-				<div class="crosstalk-video-embed">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/8lrpP-S-jkM?si=lvC6ed6XiYz4LLCj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    <header id="header">
+      <div class="header-container">
+        <h1 class="header-title">
+          <a
+            href="<?php echo esc_url( home_url( '/' ) ); ?>"
+            class="header-title-link"
+          >
+            <picture>
+              <source
+                media="(max-width:1599px)"
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+              />
+              <source
+                media="(min-width:1600px)"
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+              />
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                alt="東洋不動産株式会社"
+                class="header-title-logo"
+              />
+            </picture>
+            <span class="header-title-sub">RECRUITING SITE</span>
+          </a>
+        </h1>
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
+            >
+              <span class="en">ABOUT US</span>
+              <span class="jp">私たちが目指すもの</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
+            >
+              <span class="en">UNIQUENESS</span>
+              <span class="jp">当社の特徴</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
+            >
+              <span class="en">MESSAGE</span>
+              <span class="jp">社長メッセージ</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
+            >
+              <span class="en">PEOPLE</span>
+              <span class="jp">働く仲間たち</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
+            >
+              <span class="en">CROSS TALK</span>
+              <span class="jp">会社の雰囲気</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
+            >
+              <span class="en">CAREER PATH</span>
+              <span class="jp">キャリアパス</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
+            >
+              <span class="en">RECRUIT</span>
+              <span class="jp">採用情報</span>
+            </a>
+          </li>
+          <li class="header-list-item">
+            <a
+              class="header-list-link entry"
+              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+            >
+              <span class="en">ENTRY</span>
+            </a>
+          </li>
+        </ul>
+        <button class="js-dialog-open header-menu-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
 
-		<section class="bg-container-footer">
-			<div class="footer-container">
-				<div class="footer-content">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-entry">
-						<span class="text">ENTRY</span>
-						<span class="pict"></span>
-						<span class="bar"></span>
-					</a>
-					<ul class="footer-list">
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/" class="footer-item-link">
-								<span class="en">ABOUT US</span>
-								<span class="jp">私たちが目指すもの</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/" class="footer-item-link">
-								<span class="en">UNIQUENESS</span>
-								<span class="jp">当社の特徴</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>message/" class="footer-item-link">
-								<span class="en">MESSAGE</span>
-								<span class="jp">社長メッセージ</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>people/" class="footer-item-link">
-								<span class="en">PEOPLE</span>
-								<span class="jp">働く仲間たち</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/" class="footer-item-link">
-								<span class="en">CROSS TALK</span>
-								<span class="jp">会社の雰囲気</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>career/" class="footer-item-link">
-								<span class="en">CAREER PATH</span>
-								<span class="jp">キャリアパス</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/" class="footer-item-link">
-								<span class="en">RECRUIT</span>
-								<span class="jp">採用情報</span>
-							</a>
-						</li>
-						<li class="footer-item">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo" class="footer-item-link">
-								<span class="en">ENTRY</span>
-								<span class="jp">エントリー</span>
-							</a>
-						</li>
-					</ul>
-					<div class="footer-separator">
-						<div class="footer-logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo-link">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg" alt="" class="footer-logo-image">
-							</a>
-						</div>
-						<div class="footer-location">
-							<dl class="footer-location-list">
-								<dt class="footer-location-office">本社</dt>
-								<dd class="footer-location-address">
-									<span class="post">〒105-0001</span>
-									<span class="address">東京都港区虎ノ門2丁目3番17号 虎ノ門2丁目タワー（受付 3階）</span>
-								</dd>
-								<dt class="footer-location-office">大阪本社</dt>
-								<dd class="footer-location-address">
-									<span class="post">〒541-0044</span>
-									<span class="address">大阪市中央区伏見町4丁目4番9号 淀屋橋東洋ビル（受付 5階）</span>
-								</dd>
-								<dt class="footer-location-office">
-								</dt>
-								<dd class="footer-location-address sales">
-									<span class="office">京都営業部</span>
-									<span class="office">名古屋営業部</span>
-									<span class="office">九州営業部</span>
-								</dd>
-							</dl>
-						</div>
-						<a href="https://www.toyo-re.co.jp/" target="_blank" class="footer-location-external">コーポレートサイトへ</a>
-					</div>
-					<a href="#reveal" class="footer-totop">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg" alt="">
-					</a>
-				</div>
-			</div>
-		</section>
+    <section id="reveal" class="reveal-container">
+      <section class="bg-container-firstview">
+        <div class="firstview-container">
+          <div class="firstview-content">
+            <h2 class="firstview-title">
+              <span class="en">CROSS TALK</span>
+              <span class="jp">会社の雰囲気</span>
+            </h2>
+          </div>
+          <nav class="firstview-nav">
+            <ul class="firstview-nav-list">
+              <li class="firstview-nav-item">
+                <a href="#ct1" class="firstview-nav-link"
+                  >#01<br />中堅社員による座談会</a
+                >
+              </li>
+              <li class="firstview-nav-item">
+                <a href="#ct2" class="firstview-nav-link"
+                  >#02<br />若手社員による座談会</a
+                >
+              </li>
+              <li class="firstview-nav-item">
+                <a href="#ct3" class="firstview-nav-link"
+                  >#03<br />キャリア入社社員による座談会</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
-		<footer>
-			<p class="copyright">&copy; 2024 Toyo Real Estate Co., Ltd.</p>
-		</footer>
+      <section id="ct1" class="bg-container-crosstalk">
+        <div class="crosstalk-container">
+          <div class="crosstalk-content">
+            <img
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_crosstalk_firstview-01.png"
+              alt=""
+              class="crosstalk-firstview"
+            />
+            <ul class="crosstalk-introduce-list">
+              <li class="crosstalk-introduce-item">
+                <p class="name">児玉 国男</p>
+                <p class="division">大阪営業第三部</p>
+                <p class="joined">2016年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">坂之下 涼太</p>
+                <p class="division">東京営業第三部</p>
+                <p class="joined">2018年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">南口 和輝</p>
+                <p class="division">東京営業第五部</p>
+                <p class="joined">2013年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">山田 貴大</p>
+                <p class="division">京都営業部</p>
+                <p class="joined">2015年新卒入社</p>
+              </li>
+            </ul>
+          </div>
+          <div class="crosstalk-content text">
+            <h2 class="crosstalk-title">
+              <span class="en">CROSS TALK 01</span>
+              <span class="jp">中堅社員による座談会</span>
+            </h2>
+            <p class="crosstalk-description">
+              さまざまなプロジェクトを経験してきた中堅社員が語る、東洋不動産の「仕事の醍醐味」「東洋不動産の良さ」「目指す未来」
+            </p>
+            <div class="crosstalk-agenda-frame">
+              <h3 class="crosstalk-agenda-title">動画のアジェンダ</h3>
+              <ul class="crosstalk-agenda-list">
+                <li class="crosstalk-agenda-item">
+                  入社前の不安「営業経験のない自分が事業用不動産を扱えるのか？」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  入社のきっかけ「一人の就活生のために、こんなに時間をとってくれる社会人はなかなかいない」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  東洋不動産の偉大な先輩たち「OJTで担当してくださった先輩の存在は大きい」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  若手を巻き込んだ働き方改革「南口さんのお陰で入社したときから有給取りやすかった」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  改善してほしいこと「場所にこだわらず仕事ができるように働き方をアップデートさせたい」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  営業に立ちはだかる最初の障壁「どういうアプローチが正解なんだろう…」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  最高に嬉しい瞬間「これがあるから何年も営業ができるんだろうね」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  誠実に価値を届け続けるために「悪いことほど早く伝えるのが東洋不動産の誠実さ」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  当社に向いている人「これがないと伸びない…」
+                </li>
+              </ul>
+            </div>
+            <div class="crosstalk-video-frame">
+              <div class="crosstalk-video-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/2jQae6RAw08?si=VypX5WUC-g_S8-yq"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<dialog class="dialog js-dialog is-can-scroll">
-			<div class="dialog-content">
-				<h2 class="dialog-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="dialog-title-link">
-						<picture>
-							<source media="(max-width:1599px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<source media="(min-width:1600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png" />
-							<img
-								src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
-								alt="東洋不動産株式会社"
-								class="dialog-title-logo"
-							/>
-						</picture>
-						<span class="dialog-title-sub">RECRUITING SITE</span>
-					</a>
-				</h2>
-				<ul class="dialog-list">
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>about/">
-							<span class="en">ABOUT US</span>
-							<span class="jp">私たちが目指すもの</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/">
-							<span class="en">UNIQUENESS</span>
-							<span class="jp">当社の特徴</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>message/">
-							<span class="en">MESSAGE</span>
-							<span class="jp">社長メッセージ</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>people/">
-							<span class="en">PEOPLE</span>
-							<span class="jp">働く仲間たち</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/">
-							<span class="en">CROSS TALK</span>
-							<span class="jp">会社の雰囲気</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>career/">
-							<span class="en">CAREER PATH</span>
-							<span class="jp">キャリアパス</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/">
-							<span class="en">RECRUIT</span>
-							<span class="jp">採用情報</span>
-						</a>
-					</li>
-					<li class="dialog-item">
-						<a class="js-dialogLink dialog-link entry" href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo">
-							<span class="en">ENTRY</span>
-						</a>
-					</li>
-				</ul>
-				<button class="js-dialog-close dialog-button">閉じる</button>
-			</div>
-		</dialog>
+      <section id="ct2" class="bg-container-crosstalk">
+        <div class="crosstalk-container">
+          <div class="crosstalk-content">
+            <img
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_crosstalk_firstview-02.png"
+              alt=""
+              class="crosstalk-firstview"
+            />
+            <ul class="crosstalk-introduce-list">
+              <li class="crosstalk-introduce-item">
+                <p class="name">高坂 佳吾</p>
+                <p class="division">東京営業第二部</p>
+                <p class="joined">2021年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">上山 颯一朗</p>
+                <p class="division">大阪営業第二部</p>
+                <p class="joined">2021年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">岡部 沙耶</p>
+                <p class="division">投資運用部</p>
+                <p class="joined">2021年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">今村 颯汰</p>
+                <p class="division">東京営業第五部</p>
+                <p class="joined">2022年新卒入社</p>
+              </li>
+              <li class="crosstalk-introduce-item">
+                <p class="name">前川 涼</p>
+                <p class="division">東京営業第二部</p>
+                <p class="joined">2022年新卒入社</p>
+              </li>
+            </ul>
+          </div>
+          <div class="crosstalk-content text">
+            <h2 class="crosstalk-title">
+              <span class="en">CROSS TALK 02</span>
+              <span class="jp">若手社員による座談会</span>
+            </h2>
+            <p class="crosstalk-description">
+              2年間のOJTを終え、ひとり立ちして間もない若手社員。事業用不動産のプロフェッショナルを目指す彼らの"現在地”に迫ります。
+            </p>
+            <div class="crosstalk-agenda-frame">
+              <h3 class="crosstalk-agenda-title">動画のアジェンダ</h3>
+              <ul class="crosstalk-agenda-list">
+                <li class="crosstalk-agenda-item">
+                  入社前の不安「社会人経験のない自分が経営者と仕事できるのか？」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  選考時の率直な感想「面接という印象がなくて、雑談みたいだった」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  2年間OJTの振り返り「何もできない1年目でも全部の商談に同行できる」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  個を尊重した育成「指導員だけでなく、部全体が温かく育ててくれる」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  OJT終了後に意識したこと「自分ができることをひたすら繰り返していた」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  改善してほしいこと「服装をもう少しカジュアルにしてもいいかな」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  やりがいを感じる瞬間「事業拡大のために購入してくださった工場が完成したときは…」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  誠実に価値を届け続けるために「入社以来、先輩方から言われ続けていること」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  東洋不動産に向いている人「これさえあれば、2年間でOJTで先輩方が一定のラインまで引き上げてくれる」
+                </li>
+              </ul>
+            </div>
+            <div class="crosstalk-video-frame">
+              <div class="crosstalk-video-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mzJynIxknOs?si=9JlLy-fZuBrEB9KD"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		</section>
-		<!-- ココまで | #reveal.reveal-container -->
+      <section id="ct3" class="bg-container-crosstalk">
+        <div class="crosstalk-container">
+          <div class="crosstalk-content">
+            <img
+              src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_crosstalk_firstview-03.png"
+              alt=""
+              class="crosstalk-firstview"
+            />
+            <ul class="crosstalk-introduce-list">
+              <li class="crosstalk-introduce-item short">
+                <p class="name">村中 俊公</p>
+                <p class="division">東京営業第五部</p>
+                <p class="joined">2024年キャリア入社</p>
+              </li>
+              <li class="crosstalk-introduce-item short">
+                <p class="name">波多腰 昌記</p>
+                <p class="division">名古屋営業部</p>
+                <p class="joined">2023年キャリア入社</p>
+              </li>
+              <li class="crosstalk-introduce-item short">
+                <p class="name">廣田 淳也</p>
+                <p class="division">営業企画部</p>
+                <p class="joined">2023年キャリア入社</p>
+              </li>
+              <li class="crosstalk-introduce-item short">
+                <p class="name">堀場 俊行</p>
+                <p class="division">リーシング営業部</p>
+                <p class="joined">2018年キャリア入社</p>
+              </li>
+            </ul>
+          </div>
+          <div class="crosstalk-content text">
+            <h2 class="crosstalk-title">
+              <span class="en">CROSS TALK 03</span>
+              <span class="jp">キャリア入社社員による座談会</span>
+            </h2>
+            <p class="crosstalk-description">
+              他社での経験があるからこそわかる、東洋不動産の「良さ」「課題」「可能性」について包み隠さずに語ってもらいました。
+            </p>
+            <div class="crosstalk-agenda-frame">
+              <h3 class="crosstalk-agenda-title">動画のアジェンダ</h3>
+              <ul class="crosstalk-agenda-list">
+                <li class="crosstalk-agenda-item">
+                  入社前の不安「他社から来た人間を受け入れてくれるのか…？」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  東洋不動産の魅力「ほとんどの不動産会社と違うところ」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  東洋不動産の課題「できることが目の前にいっぱいあるのに…」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  経営に参画している実感が持てる「社長に質問できて、その場で直接回答してくれる」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  職場の雰囲気「前職では『あの人機嫌悪いから話しかけるな』ということがあったけど…」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  嬉しい瞬間「たくさんの不動産会社がある中で、当社を選んでいただける喜び」
+                </li>
+                <li class="crosstalk-agenda-item">
+                  東洋不動産に根付く誠実さ「数字のために売らないといけないという文化がない」
+                </li>
+              </ul>
+            </div>
+            <div class="crosstalk-video-frame">
+              <div class="crosstalk-video-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/8lrpP-S-jkM?si=lvC6ed6XiYz4LLCj"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<?php wp_footer() ?>
-	</body>
+      <section class="bg-container-footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <a
+              href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+              class="footer-entry"
+            >
+              <span class="text">ENTRY</span>
+              <span class="pict"></span>
+              <span class="bar"></span>
+            </a>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
+                  class="footer-item-link"
+                >
+                  <span class="en">ABOUT US</span>
+                  <span class="jp">私たちが目指すもの</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
+                  class="footer-item-link"
+                >
+                  <span class="en">UNIQUENESS</span>
+                  <span class="jp">当社の特徴</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
+                  class="footer-item-link"
+                >
+                  <span class="en">MESSAGE</span>
+                  <span class="jp">社長メッセージ</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
+                  class="footer-item-link"
+                >
+                  <span class="en">PEOPLE</span>
+                  <span class="jp">働く仲間たち</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
+                  class="footer-item-link"
+                >
+                  <span class="en">CROSS TALK</span>
+                  <span class="jp">会社の雰囲気</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
+                  class="footer-item-link"
+                >
+                  <span class="en">CAREER PATH</span>
+                  <span class="jp">キャリアパス</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
+                  class="footer-item-link"
+                >
+                  <span class="en">RECRUIT</span>
+                  <span class="jp">採用情報</span>
+                </a>
+              </li>
+              <li class="footer-item">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+                  class="footer-item-link"
+                >
+                  <span class="en">ENTRY</span>
+                  <span class="jp">エントリー</span>
+                </a>
+              </li>
+            </ul>
+            <div class="footer-separator">
+              <div class="footer-logo">
+                <a
+                  href="<?php echo esc_url( home_url( '/' ) ); ?>"
+                  class="footer-logo-link"
+                >
+                  <img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_logo.svg"
+                    alt=""
+                    class="footer-logo-image"
+                  />
+                </a>
+              </div>
+              <div class="footer-location">
+                <dl class="footer-location-list">
+                  <dt class="footer-location-office">本社</dt>
+                  <dd class="footer-location-address">
+                    <span class="post">〒105-0001</span>
+                    <span class="address"
+                      >東京都港区虎ノ門2丁目3番17号 虎ノ門2丁目タワー（受付
+                      3階）</span
+                    >
+                  </dd>
+                  <dt class="footer-location-office">大阪本社</dt>
+                  <dd class="footer-location-address">
+                    <span class="post">〒541-0044</span>
+                    <span class="address"
+                      >大阪市中央区伏見町4丁目4番9号 淀屋橋東洋ビル（受付
+                      5階）</span
+                    >
+                  </dd>
+                  <dt class="footer-location-office"></dt>
+                  <dd class="footer-location-address sales">
+                    <span class="office">京都営業部</span>
+                    <span class="office">名古屋営業部</span>
+                    <span class="office">九州営業部</span>
+                  </dd>
+                </dl>
+              </div>
+              <a
+                href="https://www.toyo-re.co.jp/"
+                target="_blank"
+                class="footer-location-external"
+                >コーポレートサイトへ</a
+              >
+            </div>
+            <a href="#reveal" class="footer-totop">
+              <img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_footer_totop.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p class="copyright">&copy; 2024 Toyo Real Estate Co., Ltd.</p>
+      </footer>
+
+      <dialog class="dialog js-dialog is-can-scroll">
+        <div class="dialog-content">
+          <h2 class="dialog-title">
+            <a
+              href="<?php echo esc_url( home_url( '/' ) ); ?>"
+              class="dialog-title-link"
+            >
+              <picture>
+                <source
+                  media="(max-width:1599px)"
+                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                />
+                <source
+                  media="(min-width:1600px)"
+                  srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                />
+                <img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_header-_logo.png"
+                  alt="東洋不動産株式会社"
+                  class="dialog-title-logo"
+                />
+              </picture>
+              <span class="dialog-title-sub">RECRUITING SITE</span>
+            </a>
+          </h2>
+          <ul class="dialog-list">
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>about/"
+              >
+                <span class="en">ABOUT US</span>
+                <span class="jp">私たちが目指すもの</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>uniqueness/"
+              >
+                <span class="en">UNIQUENESS</span>
+                <span class="jp">当社の特徴</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>message/"
+              >
+                <span class="en">MESSAGE</span>
+                <span class="jp">社長メッセージ</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>people/"
+              >
+                <span class="en">PEOPLE</span>
+                <span class="jp">働く仲間たち</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>crosstalk/"
+              >
+                <span class="en">CROSS TALK</span>
+                <span class="jp">会社の雰囲気</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>career/"
+              >
+                <span class="en">CAREER PATH</span>
+                <span class="jp">キャリアパス</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/"
+              >
+                <span class="en">RECRUIT</span>
+                <span class="jp">採用情報</span>
+              </a>
+            </li>
+            <li class="dialog-item">
+              <a
+                class="js-dialogLink dialog-link entry"
+                href="<?php echo esc_url( home_url( '/' ) ); ?>recruitment/#recruitInfo"
+              >
+                <span class="en">ENTRY</span>
+              </a>
+            </li>
+          </ul>
+          <button class="js-dialog-close dialog-button">閉じる</button>
+        </div>
+      </dialog>
+    </section>
+    <!-- ココまで | #reveal.reveal-container -->
+
+    <?php wp_footer() ?>
+  </body>
 </html>
