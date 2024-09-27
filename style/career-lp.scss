@@ -1,0 +1,1477 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.firstview {
+  &-content {
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 587px;
+    overflow: hidden;
+
+    @include mixin.mq(sm) {
+      height: 595px;
+      overflow: inherit;
+    }
+
+    @include mixin.mq(md) {
+      height: 904px;
+      margin-left: mixin.getVwNoRound(263, 1440);
+      margin-right: mixin.getVwNoRound(263, 1440);
+      width: calc(100% - mixin.getVwNoRound(526, 1440));
+    }
+
+    @include mixin.mq(lg) {
+      height: 1095px;
+    }
+
+    @include mixin.mq(xsl) {
+      height: 1232px;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 288px;
+
+    @include mixin.mq(sm) {
+      gap: 24px;
+    }
+
+    @include mixin.mq(md) {
+      max-width: inherit;
+    }
+
+    @include mixin.mq(lg) {
+      top: 135px;
+    }
+
+    @include mixin.mq(xsl) {
+      top: 296px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      @include mixin.mq(md) {
+        font-size: 64px;
+      }
+
+      @include mixin.mq(lg) {
+        font-size: 104px;
+      }
+
+      @include mixin.mq(xsl) {
+        font-size: 120px;
+      }
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+    }
+  }
+
+  &-copy {
+    position: absolute;
+    transform: translate(0, 0);
+    bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    left: 0%;
+
+    @include mixin.mq(sm) {
+      bottom: 24px;
+    }
+
+    @include mixin.mq(md) {
+      bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      left: -25%;
+    }
+
+    @include mixin.mq(lg) {
+      left: 0;
+      bottom: 24px;
+      gap: 16px;
+    }
+
+    &-wrap {
+      width: 100%;
+      max-width: 435px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 8px;
+
+      @include mixin.mq(sm) {
+        // width: 435px;
+        max-width: 559px;
+        padding: 24px 16px;
+      }
+
+      @include mixin.mq(md) {
+        padding: 16px;
+      }
+
+      @include mixin.mq(lg) {
+        margin-top: 0px;
+        padding: 24px 16px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 24px;
+
+      @include mixin.mq(lg) {
+        gap: 16px;
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 2.4vw;
+      line-height: 175%;
+      letter-spacing: 0.05em;
+      color: variables.$black-a;
+      list-style-type: disc;
+
+      @include mixin.mq(sm) {
+        font-size: 14px;
+      }
+
+      @include mixin.mq(lg) {
+        font-size: 16px;
+      }
+
+      .strong {
+        background-color: variables.$black-a;
+        color: white;
+        padding: 2px 4px;
+        margin-left: 8px;
+      }
+    }
+
+    &-single {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: mixin.getVwNoRound(13, 320);
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      padding: 4px;
+      color: white;
+      background-color: rgba(119, 167, 218, 0.9);
+      width: fit-content;
+
+      @include mixin.mq(sm) {
+        padding: 8px 16px;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        line-height: 150%;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 18px;
+        backgound-color: variables.$blue-a;
+      }
+
+      @include mixin.mq(lg) {
+        font-size: 20px;
+      }
+
+      @include mixin.mq(xsl) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    @include mixin.mq(sm) {
+      width: 100%;
+      max-width: 356px;
+    }
+
+    @include mixin.mq(md) {
+      max-width: 712px;
+      left: 67%;
+    }
+  }
+}
+
+.intro {
+  &-container {
+    width: 100%;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-bottom: 104px;
+    }
+  }
+
+  &-content {
+    background-color: variables.$blue-a;
+    padding: 24px;
+
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+
+    @include mixin.mq(md) {
+      padding: 64px 40px;
+    }
+
+    @include mixin.mq(lg) {
+      padding: 104px 64px;
+    }
+  }
+
+  &-text {
+    @include mixin.noto-sans-jp(500);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+
+    .bold {
+      font-weight: 900;
+      text-decoration: underline;
+    }
+  }
+}
+
+.why {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 104px;
+      padding-bottom: 104px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 104px;
+
+    @include mixin.mq(md) {
+      font-size: 32px;
+      letter-spacing: 0.1em;
+    }
+
+    .red {
+      color: red;
+      font-weight: 900;
+    }
+  }
+
+  &-text {
+    @include mixin.noto-sans-jp(400);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    margin-bottom: 64px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bg-container-advice {
+  background-color: variables.$blue-a;
+}
+
+.advice {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+
+    &::before {
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      content: "WHY WE RECOMMEND IT";
+      @include mixin.inter(900, italic);
+      font-size: mixin.getVwNoRound(84, 1440);
+      text-align: center;
+      color: variables.$blue-f;
+      letter-spacing: 0.1em;
+      width: 100%;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 250%;
+    text-align: center;
+    margin-bottom: 104px;
+
+    @include mixin.mq(md) {
+      font-size: 32px;
+      letter-spacing: 0.1em;
+    }
+
+    .blue {
+      background-color: variables.$blue-d;
+      color: white;
+      padding: 8px 12px;
+
+      @include mixin.mq(md) {
+        padding: 16px;
+        margin-right: 8px;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &-text {
+    @include mixin.noto-sans-jp(400);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    margin-bottom: 64px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bg-container-enjoy {
+  background-color: variables.$blue-f;
+}
+
+.enjoy {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+
+    @include mixin.mq(md) {
+      padding-top: 104px;
+      padding-bottom: 168px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      height: 100%;
+      background-repeat: repeat space;
+      background-position: center center;
+      background-size: contain;
+      background-image: url(../images/img_intern-lp_enjoy-bg-upper.svg);
+      opacity: 0.05;
+      z-index: -1;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 712px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 250%;
+    text-align: center;
+    margin-bottom: 104px;
+
+    @include mixin.mq(md) {
+      font-size: 32px;
+      letter-spacing: 0.1em;
+    }
+
+    .blue {
+      background-color: variables.$blue-d;
+      color: white;
+      padding: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  &-text {
+    @include mixin.noto-sans-jp(400);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+
+    @include mixin.mq(md) {
+      margin-bottom: 64px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &-wrap {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 24px;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.bg-container-reason {
+  background-color: variables.$gray-b;
+}
+
+.reason {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 64px;
+    }
+
+    @include mixin.mq(lg) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+
+    &.last {
+      padding-top: 0;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include mixin.mq(md) {
+      gap: 164px;
+    }
+
+    @include mixin.mq(lg) {
+      gap: 168px;
+    }
+
+    &.link {
+      max-width: 1124px;
+    }
+
+    &.section {
+      max-width: 712px;
+    }
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .sub {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.15em;
+      color: variables.$indigo-a;
+      text-align: center;
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+      }
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: baseline;
+      padding: 16px;
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+
+      .big {
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0.15em;
+        color: variables.$indigo-a;
+
+        @include mixin.mq(md) {
+          font-size: 104px;
+        }
+      }
+
+      .normal {
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+        color: variables.$indigo-a;
+
+        @include mixin.mq(md) {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  &-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 64px;
+    align-items: center;
+
+    &.three {
+      @include mixin.mq(md) {
+        flex-wrap: nowrap;
+        gap: 24px;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -64px;
+      }
+
+      @include mixin.mq(lg) {
+        margin-top: inherit;
+        align-items: flex-start;
+      }
+    }
+
+    &.five {
+      @include mixin.mq(md) {
+        flex-wrap: wrap;
+        gap: 24px;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    @include mixin.mq(lg) {
+      align-items: flex-start;
+      margin-bottom: 168px;
+      gap: 64px;
+    }
+  }
+
+  &-item {
+    width: 100%;
+    max-width: 332px;
+    position: relative;
+
+    &:nth-of-type(2) {
+      @include mixin.mq(md) {
+        margin-top: 104px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      @include mixin.mq(md) {
+        margin-top: 208px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      @include mixin.mq(md) {
+        margin-top: 104px;
+      }
+    }
+
+    .label {
+      @include mixin.inter(700, italic);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.15em;
+      color: white;
+      padding: 8px 16px;
+      background-color: variables.$indigo-a;
+      text-align: center;
+      width: fit-content;
+
+      @include mixin.mq(md) {
+      }
+
+      @include mixin.mq(lg) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // transform: translate(0%, -50%);
+
+        transform: translate(-25%, -50%);
+      }
+    }
+
+    .image {
+      width: 100%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px 24px;
+      background-color: white;
+    }
+
+    .head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+    }
+
+    .text {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 16px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &-section {
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 64px;
+
+      @include mixin.mq(md) {
+        gap: 24px;
+      }
+
+      .label {
+        @include mixin.inter(700, italic);
+
+        font-size: 16px;
+        line-height: 100%;
+        padding: 8px 16px;
+        background-color: variables.$indigo-a;
+        color: white;
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .head {
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+        text-align: center;
+
+        @include mixin.mq(md) {
+          font-size: 40px;
+          line-height: 100%;
+        }
+      }
+    }
+
+    &-lede {
+      @include mixin.noto-sans-jp(700);
+
+      // font-size: 2.9vw;
+      font-size: 20px;
+      line-height: 200%;
+      text-align: center;
+      background-color: white;
+      padding: 40px 24px;
+      width: 100%;
+      // max-width: 428px;
+      margin-bottom: 64px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mixin.mq(md) {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    &-profile {
+      &-frame {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px;
+        background-color: white;
+        align-items: center;
+
+        @include mixin.mq(md) {
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+      }
+
+      &-portrait {
+        display: flex;
+        align-items: center;
+
+        .image {
+          width: 100%;
+          max-width: 104px;
+        }
+      }
+
+      &-info {
+        width: 100%;
+
+        @include mixin.mq(md) {
+          width: calc(100% - 40px - 104px);
+        }
+
+        .division {
+          margin-bottom: 24px;
+        }
+
+        .name {
+          margin-bottom: 16px;
+
+          // @include mixin.mq(md) {
+          //   margin-bottom: inherit;
+          // }
+        }
+
+        .division,
+        .name {
+          @include mixin.noto-sans-jp(700);
+
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0.05em;
+
+          @include mixin.mq(md) {
+            font-size: 20px;
+            letter-spacing: 0.1em;
+          }
+        }
+
+        .description {
+          @include mixin.noto-sans-jp(400);
+
+          font-size: 16px;
+          line-height: 175%;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+
+    &-image {
+      width: 100%;
+      display: block;
+      margin-bottom: 64px;
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+      margin-bottom: 64px;
+
+      .bold {
+        font-weight: 900;
+        text-decoration: underline;
+      }
+
+      .caution {
+        font-weight: 500;
+        color: variables.$gray-e;
+      }
+
+      &.last {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.bg-container-tables {
+  background-color: variables.$blue-a;
+}
+
+.tables {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 250%;
+    width: 100%;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .indigo {
+      background-color: variables.$indigo-a;
+      color: white;
+      padding: 16px;
+      margin-left: 8px;
+    }
+
+    @include mixin.mq(md) {
+      font-size: 40px;
+      margin-bottom: 104px;
+      letter-spacing: 0.05em;
+    }
+
+    @include mixin.mq(lg) {
+    }
+  }
+
+  &-table {
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 64px;
+
+    border: solid 1px variables.$gray-c;
+
+    @include mixin.mq(md) {
+      margin-bottom: 0;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+
+      @include mixin.mq(md) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      &:not(:last-of-type) {
+        td {
+          border-bottom: solid 1px variables.$gray-a;
+        }
+        th {
+          border-bottom: solid 1px white;
+        }
+      }
+    }
+
+    th,
+    td {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 16px;
+      line-height: 220%;
+      padding: 16px;
+      box-sizing: border-box;
+      border-spacing: 1px;
+      background-color: white;
+
+      .bold {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .caution {
+        font-size: 14px;
+        font-weight: 500;
+        color: variables.$gray-e;
+      }
+    }
+
+    th {
+      width: 100%;
+      background-color: variables.$indigo-a;
+      color: white;
+
+      @include mixin.mq(sm) {
+        width: 132px;
+      }
+    }
+
+    td {
+      width: 100%;
+
+      @include mixin.mq(sm) {
+        width: calc(100% - 132px);
+      }
+    }
+  }
+}
+
+.bg-container-voice {
+  background-color: variables.$black-a;
+
+  &.first {
+    margin-bottom: 168px;
+  }
+}
+
+.voice {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 250%;
+    color: white;
+    width: 100%;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .white {
+      background-color: white;
+      color: variables.$black-a;
+      padding: 16px;
+      margin-right: 16px;
+    }
+
+    @include mixin.mq(md) {
+      font-size: 40px;
+      letter-spacing: 0.05em;
+    }
+
+    @include mixin.mq(lg) {
+    }
+  }
+
+  &-description {
+    @include mixin.noto-sans-jp(500);
+
+    font-size: 14px;
+    line-height: 175%;
+    color: white;
+    text-align: center;
+    margin-bottom: 64px;
+
+    @include mixin.mq(md) {
+      font-size: 16px;
+      line-height: 100%;
+    }
+  }
+
+  &-embed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    margin-bottom: 24px;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-frame {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 104px;
+
+    @include mixin.mq(md) {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    @include mixin.mq(xl) {
+      gap: 104px;
+    }
+  }
+
+  &-block {
+    width: 100%;
+    // @include mixin.mq(md) {
+    //   width: calc(50% - 20px);
+    // }
+
+    // @include mixin.mq(xl) {
+    //   width: calc(50% - (104px / 2));
+    // }
+
+    &:first-of-type {
+      margin-bottom: 24px;
+
+      @include mixin.mq(md) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 24px;
+      line-height: 100%;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 16px;
+      line-height: 100%;
+      color: white;
+    }
+  }
+}
+
+.bg-container-challenge {
+  background-color: variables.$blue-c;
+}
+
+.challenge {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 32px;
+    line-height: 250%;
+    color: white;
+    width: 100%;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .white {
+      background-color: white;
+      color: variables.$blue-c;
+      padding: 16px;
+      margin-right: 16px;
+    }
+
+    @include mixin.mq(sm) {
+      margin-bottom: 40px;
+    }
+
+    @include mixin.mq(md) {
+      letter-spacing: 0.05em;
+    }
+
+    @include mixin.mq(lg) {
+      font-size: 40px;
+    }
+  }
+
+  &-lede {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 14px;
+    line-height: 175%;
+    padding: 24px;
+    background-color: white;
+    color: variables.$blue-c;
+    text-align: center;
+    width: 100%;
+    max-width: 474px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(sm) {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    @include mixin.mq(md) {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &-description {
+    @include mixin.noto-sans-jp(500);
+
+    font-size: 14px;
+    line-height: 175%;
+    color: white;
+
+    @include mixin.mq(sm) {
+      font-size: 16px;
+      line-height: 220%;
+    }
+
+    @include mixin.mq(md) {
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+.flow {
+  &-container {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 836px;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    // margin-bottom: 40px;
+    background-color: variables.$indigo-a;
+    color: white;
+    padding: 40px;
+
+    @include mixin.mq(sm) {
+      font-size: 40px;
+      // margin-bottom: 64px;
+      padding: 40px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 64px;
+    box-sizing: border-box;
+    border-left: solid 1px variables.$indigo-a;
+    border-bottom: solid 1px variables.$indigo-a;
+    border-right: solid 1px variables.$indigo-a;
+    padding: 40px;
+
+    @include mixin.mq(md) {
+      gap: 104px;
+      margin-bottom: 168px;
+      padding: 64px;
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    @include mixin.noto-sans-jp(500);
+
+    font-size: 20px;
+    line-height: 175%;
+
+    text-align: center;
+    background-color: variables.$blue-a;
+    color: variables.$indigo-a;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    @include mixin.mq(sm) {
+      padding: 40px;
+    }
+
+    .head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 24px;
+      line-height: 100%;
+      text-align: center;
+      background-color: white;
+      color: variables.$indigo-a;
+      width: fit-content;
+      padding: 16px;
+
+      @include mixin.mq(sm) {
+        padding: 16px 64px;
+      }
+    }
+
+    .last {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 24px;
+      line-height: 100%;
+      text-align: center;
+      color: variables.$indigo-a;
+    }
+
+    .text {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 20px;
+      line-height: 175%;
+      text-align: center;
+      color: variables.$indigo-a;
+      width: fit-content;
+    }
+
+    @include mixin.mq(md) {
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      padding: 40px;
+    }
+
+    &:not(:last-of-type) {
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: calc(-13% - 0px);
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 24px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-image: url(../images/img_intern-lp_triangle.svg);
+        background-size: contain;
+        background-position: center center;
+
+        @include mixin.mq(sm) {
+          bottom: calc(-10% - 8px);
+        }
+
+        @include mixin.mq(md) {
+          bottom: calc(-10% - 40px);
+        }
+      }
+    }
+  }
+
+  &-entry {
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 24px;
+      box-sizing: border-box;
+      border: solid 2px variables.$indigo-a;
+
+      &.head {
+        background-color: variables.$indigo-a;
+      }
+
+      @include mixin.mq(sm) {
+        gap: 40px;
+      }
+    }
+
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: white;
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 14px;
+      line-height: 175%;
+
+      text-align: center;
+
+      @include mixin.mq(sm) {
+        font-size: 16px;
+      }
+
+      @include mixin.mq(md) {
+        letter-spacing: 0.05em;
+      }
+    }
+
+    &-link {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+      background-color: variables.$indigo-a;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 34px;
+      width: fit-content;
+
+      @include mixin.mq(sm) {
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        padding: 16px 64px;
+      }
+
+      position: relative;
+      transition-property: background-color, color, border;
+      transition-duration: 0.33s;
+      transition-timing-function: ease-out;
+      box-sizing: border-box;
+      border: solid 2px variables.$indigo-a;
+
+      &:hover {
+        background-color: white;
+        color: variables.$indigo-a;
+        border: solid 2px variables.$indigo-a;
+      }
+    }
+  }
+}

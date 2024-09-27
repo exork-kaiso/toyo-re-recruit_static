@@ -1,0 +1,126 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.dialog {
+  border: none;
+  padding: 24px 8px;
+
+  @include mixin.mq(sm) {
+    padding: 40px 64px;
+  }
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &-title {
+    &-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 16px;
+      align-items: baseline;
+      margin-bottom: 16px;
+    }
+
+    &-logo {
+      width: 100%;
+      max-width: 75px;
+      max-height: 24px;
+
+      @include mixin.mq(md) {
+        max-width: 125px;
+        max-height: 40px;
+      }
+    }
+
+    &-sub {
+      @include mixin.inter(700, normal);
+
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    // margin-bottom: 16px;
+
+    @include mixin.mq(md) {
+      gap: 24px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+
+    &.entry {
+      @include mixin.inter(700, normal);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      text-align: center;
+      display: block;
+      border: solid 1px variables.$indigo-a;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 8px 16px;
+      margin-top: 24px;
+      background-color: variables.$indigo-a;
+      color: white;
+
+      @include mixin.mq(md) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &-button {
+    border: solid 1px black;
+    // border-radius: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 8px 16px;
+    width: 100%;
+
+    @include mixin.noto-sans-jp(500);
+
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}

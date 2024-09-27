@@ -1,0 +1,885 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.firstview {
+  &-content {
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 352px;
+    overflow: hidden;
+
+    @include mixin.mq(sm) {
+      height: 369px;
+    }
+
+    @include mixin.mq(md) {
+      height: 513px;
+    }
+
+    @include mixin.mq(lg) {
+      height: 652px;
+    }
+
+    @include mixin.mq(xsl) {
+      height: 832px;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 288px;
+
+    @include mixin.mq(sm) {
+      max-width: 65vw;
+    }
+
+    @include mixin.mq(md) {
+      gap: 24px;
+    }
+
+    @include mixin.mq(lg) {
+      top: 135px;
+    }
+
+    @include mixin.mq(xsl) {
+      top: 296px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      @include mixin.mq(md) {
+        font-size: 64px;
+      }
+      @include mixin.mq(lg) {
+        font-size: 104px;
+      }
+      @include mixin.mq(xsl) {
+        font-size: 120px;
+      }
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+    }
+  }
+}
+
+.bg-container-thought {
+  background-color: variables.$blue-a;
+}
+
+.thought {
+  &-container {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      margin-bottom: 168px;
+    }
+
+    @include mixin.mq(lg) {
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &.eyecatch {
+      position: relative;
+      padding-top: 88px;
+
+      @include mixin.mq(sm) {
+        padding-top: 106px;
+      }
+
+      @include mixin.mq(lg) {
+        padding-top: 207px;
+      }
+    }
+
+    &.section {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 0px;
+
+      @include mixin.mq(md) {
+        padding-top: 219px;
+        gap: 64px;
+      }
+
+      @include mixin.mq(lg) {
+        padding-top: 107px;
+      }
+    }
+
+    @include mixin.mq(sm) {
+      max-width: 673px;
+    }
+  }
+
+  &-image {
+    position: absolute;
+    width: 100%;
+    max-width: 288px;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(0% - (178px / 2)));
+
+    @include mixin.mq(sm) {
+      max-width: 345px;
+      transform: translate(-50%, calc(0% - (213px / 2)));
+    }
+
+    @include mixin.mq(md) {
+      max-width: 673px;
+      transform: translate(-50%, calc(0% - (309px / 2)));
+    }
+
+    @include mixin.mq(lg) {
+      transform: translate(-50%, calc(0% - (411px / 2)));
+    }
+
+    @include mixin.mq(xsl) {
+      transform: translate(-50%, calc(0% - (416px / 2)));
+    }
+  }
+
+  &-section {
+    &-head {
+      position: relative;
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.1em;
+
+      @include mixin.mq(md) {
+        font-size: 20px;
+      }
+      @include mixin.mq(lg) {
+        font-size: 24px;
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 14px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+      color: variables.$black-b;
+
+      @include mixin.mq(md) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.talent {
+  &-container {
+    // padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      // padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-mat {
+    &-wrap {
+      width: calc(100% - 32px);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background-color: variables.$blue-a;
+      margin-bottom: 40px;
+
+      @include mixin.mq(sm) {
+        padding: 40px;
+        gap: 40px;
+        margin-bottom: 104px;
+      }
+
+      @include mixin.mq(md) {
+        max-width: 688px;
+      }
+    }
+
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 175%;
+      letter-spacing: 0.1em;
+      color: variables.$indigo-a;
+      text-align: center;
+
+      @include mixin.mq(sm) {
+        font-size: 24px;
+        line-height: 150%;
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 16px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+      color: variables.$black-a;
+    }
+  }
+
+  &-image {
+    width: calc(100% - 32px);
+    max-width: 766px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(md) {
+      width: 75vw;
+    }
+
+    @include mixin.mq(lg) {
+      width: 100%;
+    }
+  }
+}
+
+.bg-container-explain {
+  background-color: variables.$blue-a;
+}
+
+.explain {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 104px;
+      padding-bottom: 104px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(md) {
+      max-width: 647px;
+    }
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    color: variables.$indigo-a;
+    text-align: center;
+    margin-bottom: 64px;
+
+    @include mixin.mq(sm) {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
+
+  &-description {
+    @include mixin.noto-sans-jp(400);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    color: variables.$black-a;
+    max-width: 647px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+  }
+
+  &-agenda {
+    &-frame {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background-color: white;
+      padding: 40px 24px;
+
+      @include mixin.mq(sm) {
+        padding: 64px 40px;
+        gap: 40px;
+        max-width: 647px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-title {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      color: variables.$black-b;
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+      color: variables.$black-b;
+    }
+  }
+
+  &-video {
+    &-frame {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 40px;
+
+      @include mixin.mq(sm) {
+        max-width: 647px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-embed {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.welfare {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(xl) {
+      max-width: 1232px;
+    }
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 64px;
+
+    @include mixin.mq(sm) {
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @include mixin.mq(xsl) {
+      max-width: 1232px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px;
+    width: 100%;
+    background-color: variables.$blue-a;
+
+    @include mixin.mq(sm) {
+      max-width: calc(50% - 8px);
+      padding: 64px 40px;
+    }
+
+    @include mixin.mq(lg) {
+      max-width: calc(33% - 16px);
+    }
+
+    @include mixin.mq(xl) {
+      max-width: 400px;
+    }
+
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-align: center;
+
+      @include mixin.mq(sm) {
+        font-size: 24px;
+        line-height: 150%;
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 14px;
+      line-height: 175%;
+    }
+  }
+}
+
+.process {
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @include mixin.mq(md) {
+      font-size: 40px;
+      line-height: 100%;
+      margin-bottom: 64px;
+    }
+  }
+
+  &-tab {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-left: 40px;
+
+      @include mixin.mq(lg) {
+        gap: 40px;
+      }
+    }
+
+    &-item {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 14px;
+      line-height: 175%;
+      letter-spacing: 0.025em;
+      text-align: left;
+      position: relative;
+
+      &::before {
+        content: "〇";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-40px, 0);
+      }
+
+      @include mixin.mq(sm) {
+        font-size: 20px;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+      }
+    }
+
+    &-wrap {
+      text-align: center;
+      order: -1;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      border-radius: 6px 6px 0 0;
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 720px;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: variables.$blue-a;
+        display: block;
+        order: -1;
+      }
+
+      @include mixin.mq(lg) {
+        max-width: 960px;
+      }
+
+      @include mixin.mq(xl) {
+        max-width: 1200px;
+      }
+    }
+
+    &-label {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: mixin.getVwNoRound(14, 320);
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      color: variables.$black-a;
+      padding: 24px 8px;
+      color: White;
+      background: variables.$blue-b;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+      text-align: center;
+      order: -1;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      flex: 1;
+
+      @include mixin.mq(sm) {
+        font-size: 20px;
+        padding: 24px 8px;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+        padding: 24px 16px;
+      }
+
+      &:nth-child(odd) {
+        @include mixin.mq(sm) {
+          margin-left: 8px;
+        }
+      }
+
+      &:nth-child(even) {
+        @include mixin.mq(sm) {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &-label:not(:last-of-type) {
+      @include mixin.mq(sm) {
+        margin-right: 5px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      background-color: variables.$blue-a;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* アクティブなタブ */
+    &-switch:checked + &-label {
+      background: variables.$blue-a;
+      color: variables.$black-a;
+    }
+
+    &-switch:checked + &-label + &-content {
+      height: auto;
+      overflow: auto;
+      opacity: 1;
+      // transition: 0.5s opacity;
+
+      padding: 24px 16px;
+
+      @include mixin.mq(sm) {
+        gap: 40px;
+        padding: 40px;
+      }
+
+      @include mixin.mq(md) {
+        gap: 64px;
+        padding: 64px;
+      }
+    }
+
+    /* ラジオボタン非表示 */
+    &-switch {
+      display: none;
+    }
+  }
+
+  &-step {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &-item {
+      .cell {
+        display: flex;
+        flex-direction: column;
+
+        @include mixin.mq(md) {
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+      }
+
+      .head {
+        background-color: variables.$blue-c;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+        align-items: center;
+
+        @include mixin.mq(md) {
+          width: 50%;
+          justify-content: center;
+          padding: 24px;
+        }
+
+        @include mixin.mq(lg) {
+          gap: 40px;
+          padding: 40px;
+          width: 40%;
+        }
+
+        @include mixin.mq(xsl) {
+          gap: 64px;
+          width: 50%;
+        }
+      }
+
+      .step {
+        @include mixin.inter(700, italic);
+
+        font-size: 10px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        padding: 8px 16px;
+        background-color: white;
+        border-radius: 18px;
+
+        @include mixin.mq(lg) {
+          font-size: 16px;
+        }
+      }
+
+      .text {
+        @include mixin.noto-sans-jp(500);
+
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        color: white;
+
+        @include mixin.mq(lg) {
+          font-size: 24px;
+        }
+      }
+
+      .description {
+        background-color: white;
+        padding: 40px;
+
+        @include mixin.mq(md) {
+          width: 50%;
+        }
+
+        @include mixin.mq(lg) {
+          width: 60%;
+        }
+
+        @include mixin.mq(xsl) {
+          width: 50%;
+        }
+
+        & > p {
+          @include mixin.noto-sans-jp(400);
+
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0.05em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @include mixin.mq(sm) {
+      margin-bottom: 64px;
+    }
+
+    @include mixin.mq(md) {
+      font-size: 40px;
+      line-height: 100%;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include mixin.mq(lg) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      max-width: 1029px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-item {
+    @include mixin.mq(lg) {
+      width: calc(33% - 0px);
+    }
+  }
+
+  &-link {
+    box-sizing: border-box;
+    border: solid 1px variables.$indigo-a;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 138px;
+
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: variables.$indigo-a;
+    display: flex;
+    padding: 40px 24px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(0, -50%);
+      width: 0%;
+      height: 100%;
+      background-color: variables.$indigo-a;
+      transition-property: width;
+      transition-duration: 0.33s;
+      transition-timing-function: ease-out;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: white;
+
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}

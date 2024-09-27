@@ -1,0 +1,84 @@
+// マップ型の変数でブレイクポイントを定義する
+$breakpoints: (
+  "xs": "screen and (min-width: 320px)",
+  "sm": "screen and (min-width: 576px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1024px)",
+  "xsl": "screen and (min-width: 1200px)",
+  "xl": "screen and (min-width: 1366px)",
+  "xxl": "screen and (min-width: 1920px)",
+) !default;
+
+// メディアクエリ
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// vwの算出（四捨五入）
+@function getVw($elemSize: 10, $windowWidth: 375) {
+  $vwValue: round(calc($elemSize * calc(100 / $windowWidth))) + vw;
+  @return $vwValue;
+}
+
+// vwの算出（四捨五入）
+@function getVwNoRound($elemSize: 10, $windowWidth: 375) {
+  $vwValue: calc($elemSize * calc(100 / $windowWidth)) + vw;
+  @return $vwValue;
+}
+
+// フォント
+@mixin noto-sans-jp($weight) {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin biz-udmincho($uniquifier) {
+  font-family: "BIZ UDMincho", serif;
+  font-style: normal;
+
+  @if $uniquifier == regular {
+    font-weight: 400;
+  } @else {
+    font-weight: 700;
+  }
+}
+
+@mixin biz-udgothic($uniquifier) {
+  font-family: "BIZ UDGothic", sans-serif;
+  font-style: normal;
+
+  @if $uniquifier == regular {
+    font-weight: 400;
+  } @else {
+    font-weight: 700;
+  }
+}
+
+@mixin inter($weight, $style) {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+
+  @if $style == normal {
+    font-style: normal;
+  } @else {
+    font-style: italic;
+  }
+}
+
+// グラデーション
+// @mixin green-gradation {
+//   background: linear-gradient(99.85deg, #2da339 0%, #72ce09 50%, #c1d01d 100%);
+// }
+
+// 絶対配置
+@mixin vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

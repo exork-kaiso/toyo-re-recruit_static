@@ -1,0 +1,215 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+
+  @include mixin.mq(xsl) {
+    transition-property: background-color;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &.open {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    .headerBg {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100vw;
+      height: calc(100vh - 71px);
+      position: absolute;
+      top: 71px;
+      left: 0;
+
+      @include mixin.mq(md) {
+        top: 130px;
+      }
+
+      @include mixin.mq(lg) {
+        top: 145px;
+      }
+    }
+  }
+
+  &.bgColor {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+}
+
+.header {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0px 0px 0px 20px;
+
+    @include mixin.mq(xl) {
+      padding: 40px;
+    }
+  }
+
+  &-title {
+    &-link {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &-sub {
+      @include mixin.inter(700, normal);
+
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: variables.$indigo-a;
+      margin-left: 4px;
+
+      @include mixin.mq(xl) {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        margin-left: 24px;
+      }
+    }
+
+    &-logo {
+      width: 100%;
+      max-width: 75px;
+      max-height: 24px;
+
+      @include mixin.mq(xl) {
+        max-width: 125px;
+        max-height: 40px;
+      }
+    }
+  }
+
+  &-list {
+    display: none;
+
+    @include mixin.mq(xl) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 24px;
+      align-items: center;
+    }
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      & > .en {
+        @include mixin.inter(700, normal);
+
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        z-index: 5;
+      }
+
+      & > .jp {
+        @include mixin.noto-sans-jp(500);
+
+        font-size: 10px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+
+      &.entry {
+        @include mixin.inter(700, normal);
+
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        color: white;
+        background-color: variables.$indigo-a;
+        padding: 16px 40px;
+        position: relative;
+        box-sizing: border-box;
+        border: solid 2px variables.$indigo-a;
+        transition-property: color;
+        transition-duration: 0.33s;
+        transition-timing-function: ease-out;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0%;
+          transform: translate(0, -50%);
+          width: 0%;
+          height: 100%;
+          background-color: white;
+          transition-property: width, color;
+          transition-duration: 0.33s;
+          transition-timing-function: ease-out;
+        }
+
+        &:hover {
+          color: variables.$indigo-a;
+
+          &:before {
+            width: 100%;
+            color: variables.$indigo-a;
+          }
+        }
+      }
+    }
+  }
+
+  &-menu-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: variables.$indigo-a;
+
+    @include mixin.mq(xl) {
+      display: none;
+    }
+
+    &.open > .bar {
+      &:nth-of-type(1) {
+        transform: translate(-50%, calc(-50%)) rotate(45deg);
+      }
+
+      &:nth-of-type(2) {
+        transform: translate(-50%, calc(-50%)) rotate(-45deg);
+      }
+    }
+
+    & > .bar {
+      width: 16px;
+      height: 2px;
+      display: inline-block;
+      background-color: white;
+      position: absolute;
+      transform-origin: center center;
+      top: 50%;
+      left: 50%;
+      transition-property: transform;
+      transition-duration: 0.25s;
+      transition-delay: 0;
+      transition-timing-function: ease-in-out;
+
+      &:nth-of-type(1) {
+        transform: translate(-50%, calc(-50% - 4px));
+      }
+
+      &:nth-of-type(2) {
+        transform: translate(-50%, calc(-50% + 4px));
+      }
+    }
+  }
+}

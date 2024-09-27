@@ -1,0 +1,320 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.bg-container-footer {
+  position: relative;
+}
+
+.footer {
+  &-container {
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-entry {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: mixin.getVwNoRound(616, 1440);
+    background-image: url(../images/img_footer_bg-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .text {
+      @include mixin.inter(700, normal);
+
+      font-size: mixin.getVwNoRound(40, 320);
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      color: white;
+
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(0%, -50%);
+
+      @include mixin.mq(md) {
+        font-size: mixin.getVwNoRound(96, 1440);
+      }
+    }
+
+    .pict {
+      position: absolute;
+      width: 35px;
+      height: 31px;
+      top: 50%;
+      right: 10%;
+      transform: translate(0%, -50%);
+
+      background-image: url(../images/img_footer_arrow_white.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+
+      @include mixin.mq(sm) {
+        width: 71px;
+        height: 63px;
+      }
+    }
+
+    .bar {
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      top: 70%;
+      right: 10%;
+      transform: translate(0%, -50%);
+      background-color: white;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    padding: 64px 16px;
+    background-color: variables.$indigo-a;
+    box-sizing: border-box;
+    border-bottom: solid 1px white;
+    width: 100%;
+
+    @include mixin.mq(xl) {
+      justify-content: center;
+    }
+  }
+
+  &-item {
+    width: 100%;
+    max-width: 140px;
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      color: white;
+
+      .en {
+        @include mixin.inter(700, normal);
+
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+
+      .jp {
+        @include mixin.noto-sans-jp(500);
+
+        font-size: 10px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+    }
+  }
+
+  &-separator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    background-color: variables.$indigo-a;
+    padding: 64px 16px;
+
+    @include mixin.mq(md) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    @include mixin.mq(lg) {
+      justify-content: center;
+      gap: 104px;
+    }
+  }
+
+  &-logo {
+    @include mixin.mq(md) {
+      width: 180px;
+    }
+
+    // @include mixin.mq(xl) {
+    //   width: mixin.getVwNoRound(202, 1440);
+    // }
+
+    &-image {
+      width: 100%;
+      max-width: 180px;
+      max-height: 75px;
+    }
+  }
+
+  &-location {
+    @include mixin.mq(md) {
+      width: calc(100% - 180px - 40px - 211px - 40px);
+    }
+
+    @include mixin.mq(lg) {
+      // width: 422px;
+      width: mixin.getVwNoRound(425, 1024);
+    }
+
+    @include mixin.mq(xl) {
+      // width: 621px;
+      width: mixin.getVwNoRound(621, 1440);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    &-office {
+      width: 100%;
+      margin-bottom: 16px;
+
+      @include mixin.mq(sm) {
+        width: calc(33% - 12px);
+        margin-bottom: 0;
+      }
+
+      @include mixin.mq(md) {
+        width: 100%;
+      }
+    }
+
+    &-office,
+    &-address {
+      @include mixin.biz-udgothic(regular);
+
+      display: block;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+      color: white;
+
+      .post,
+      .address,
+      .office {
+        @include mixin.biz-udgothic(regular);
+
+        display: block;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: white;
+      }
+    }
+
+    &-address {
+      width: 100%;
+      margin-bottom: 24px;
+
+      @include mixin.mq(sm) {
+        width: calc(67% - 12px);
+        margin-bottom: 0;
+      }
+
+      @include mixin.mq(md) {
+        width: 100%;
+      }
+
+      // @include mixin.mq(xl) {
+      //   width: mixin.getVwNoRound(202, 1440);
+      // }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &.sales {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 16px;
+
+        .office {
+          text-align: left;
+        }
+      }
+    }
+
+    &-external {
+      @include mixin.biz-udgothic(bold);
+
+      display: block;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: white;
+      position: relative;
+      width: 211px;
+      height: 48px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0, -50%);
+        width: 48px;
+        height: 48px;
+        background-repeat: no-repeat;
+        background-image: url(../images/img_footer_external.svg);
+        background-position: center center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &-totop {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+
+    @include mixin.mq(md) {
+      bottom: 24px;
+      right: 24px;
+      width: 104px;
+      height: 104px;
+    }
+
+    @include mixin.mq(xl) {
+      bottom: 64px;
+      right: 64px;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.copyright {
+  @include mixin.biz-udgothic(bold);
+
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: variables.$black-b;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,231 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.firstview {
+  &-content {
+    // @extend %firstviewContent;
+
+    // @include mixin.mq(sm) {
+    //   width: 100%;
+    //   max-width: 432px;
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
+
+    // @include mixin.mq(md) {
+    //   max-width: 673px;
+    // }
+
+    // @include mixin.mq(xsl) {
+    //   max-width: 945px;
+    // }
+
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 320px;
+
+    @include mixin.mq(sm) {
+      height: 375px;
+    }
+
+    @include mixin.mq(md) {
+      height: 465px;
+      margin-left: mixin.getVwNoRound(263, 1440);
+      margin-right: mixin.getVwNoRound(263, 1440);
+      width: calc(100% - mixin.getVwNoRound(526, 1440));
+    }
+
+    @include mixin.mq(lg) {
+      height: 671px;
+    }
+
+    @include mixin.mq(xsl) {
+      height: 832px;
+    }
+  }
+
+  &-title {
+    // @extend %firstviewTitle;
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 288px;
+
+    @include mixin.mq(sm) {
+      gap: 24px;
+    }
+
+    @include mixin.mq(md) {
+      max-width: inherit;
+    }
+
+    @include mixin.mq(lg) {
+      top: 135px;
+    }
+
+    @include mixin.mq(xsl) {
+      top: 296px;
+    }
+
+    .en {
+      // font-size: mixin.getVwNoRound(48, 320);
+      @include mixin.inter(700, normal);
+
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      // @include mixin.mq(sm) {
+      //   font-size: 48px;
+      // }
+
+      @include mixin.mq(md) {
+        font-size: 64px;
+      }
+
+      @include mixin.mq(lg) {
+        font-size: 104px;
+      }
+
+      @include mixin.mq(xsl) {
+        font-size: 120px;
+      }
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+    }
+  }
+}
+
+.message {
+  &-container {
+    padding-top: 129px;
+    padding-bottom: 168px;
+    position: relative;
+
+    @include mixin.mq(md) {
+      padding-top: 163px;
+    }
+
+    @include mixin.mq(lg) {
+      padding-top: 263px;
+    }
+
+    @include mixin.mq(xl) {
+      padding-top: 343px;
+    }
+  }
+
+  &-firstview {
+    @extend %image-block;
+
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 290px;
+
+    @include mixin.mq(sm) {
+      width: 432px;
+    }
+
+    @include mixin.mq(md) {
+      top: -213px;
+      width: 673px;
+    }
+
+    @include mixin.mq(xsl) {
+      transform: translate(calc(-50% - 182px), 0%);
+    }
+  }
+
+  &-content {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 16px);
+    max-width: 290px;
+
+    @include mixin.mq(sm) {
+      margin-top: 104px;
+      max-width: 432px;
+    }
+
+    @include mixin.mq(md) {
+      max-width: 673px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include mixin.mq(lg) {
+      margin-top: 0;
+    }
+
+    @include mixin.mq(xsl) {
+      max-width: 945px;
+    }
+  }
+
+  &-lede {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    padding: 16px;
+    background-color: white;
+    width: 310px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, calc(0% + 104px));
+
+    @include mixin.mq(sm) {
+      width: max-content;
+      transform: translate(calc(-50% + 104px), calc(0% + 104px));
+    }
+
+    @include mixin.mq(md) {
+      font-size: 24px;
+      letter-spacing: 0.1em;
+      transform: translate(calc(-50% + 70px), calc(0% + 104px));
+    }
+  }
+
+  &-text {
+    @include mixin.noto-sans-jp(500);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    margin-bottom: 64px;
+  }
+
+  &-sign {
+    @include mixin.biz-udmincho(regular);
+
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: right;
+
+    @include mixin.mq(sm) {
+      font-size: 24px;
+    }
+  }
+}

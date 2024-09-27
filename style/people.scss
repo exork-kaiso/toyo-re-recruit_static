@@ -1,0 +1,509 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.firstview {
+  &-content {
+    &-title {
+    }
+  }
+
+  &-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-content {
+    &.archive {
+      @extend %firstviewContent;
+    }
+  }
+
+  &-title {
+    &.archive {
+      @extend %firstviewTitle;
+    }
+  }
+
+  &-image {
+    display: block;
+    width: calc(100% - 16px);
+    max-width: 1200px;
+    margin-top: 128px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(md) {
+      width: mixin.getVwNoRound(1220, 1440);
+    }
+  }
+
+  &-message {
+    &-container {
+      background-color: variables.$blue-a;
+      padding-top: 208px;
+      padding-bottom: 104px;
+      margin-top: -168px;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @include mixin.mq(sm) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      @include mixin.mq(md) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 64px;
+        padding-right: 64px;
+      }
+
+      @include mixin.mq(lg) {
+        padding-top: 272px;
+        padding-left: mixin.getVwNoRound(168, 1440);
+        padding-right: mixin.getVwNoRound(168, 1440);
+      }
+
+      @include mixin.mq(xsl) {
+        gap: 104px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mixin.mq(sm) {
+        width: 528px;
+      }
+
+      &:nth-of-type(1) {
+        flex: 2;
+      }
+
+      &:nth-of-type(2) {
+        flex: 1;
+      }
+    }
+
+    &-title {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+
+      @include mixin.mq(md) {
+        font-size: mixin.getVwNoRound(12, 768);
+      }
+
+      @include mixin.mq(lg) {
+        font-size: mixin.getVwNoRound(20, 1440);
+        margin-bottom: 64px;
+      }
+
+      & > span {
+        background-color: white;
+        padding: 8px;
+        margin-bottom: 8px;
+        display: block;
+        width: fit-content;
+      }
+    }
+
+    &-lede {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 14px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+      color: variables.$black-a;
+
+      @include mixin.mq(md) {
+        font-size: mixin.getVwNoRound(11, 768);
+      }
+
+      @include mixin.mq(lg) {
+        font-size: mixin.getVwNoRound(16, 1440);
+      }
+    }
+
+    &-name {
+      @include mixin.biz-udmincho(regular);
+
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+
+      @include mixin.mq(md) {
+        font-size: mixin.getVwNoRound(48, 1440);
+      }
+    }
+
+    &-attribute {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &.first {
+        // display: block;
+        margin-bottom: 40px;
+      }
+
+      & > span {
+        padding: 8px;
+        background-color: variables.$blue-b;
+        color: white;
+        display: inline-block;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+.interview {
+  &-container {
+    padding-top: 168px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include mixin.mq(sm) {
+      padding-bottom: 168px;
+      gap: 168px;
+    }
+
+    @include mixin.mq(md) {
+      padding-top: 104px;
+    }
+  }
+
+  &-offset {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 16px);
+
+    @include mixin.mq(sm) {
+      max-width: 400px;
+    }
+
+    @include mixin.mq(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: calc(100% - (168px * 2));
+    }
+
+    @include mixin.mq(lg) {
+      max-width: inherit;
+    }
+
+    @include mixin.mq(xl) {
+      gap: 104px;
+      justify-content: center;
+    }
+
+    &:nth-of-type(1) {
+      .interview-label {
+        &::before {
+          content: "01";
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .interview-label {
+        &::before {
+          content: "02";
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .interview-label {
+        &::before {
+          content: "03";
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      .interview-label {
+        &::before {
+          content: "04";
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      .interview-label {
+        &::before {
+          content: "05";
+        }
+      }
+    }
+
+    &:nth-of-type(6) {
+      .interview-label {
+        &::before {
+          content: "06";
+        }
+      }
+    }
+
+    &:nth-of-type(7) {
+      .interview-label {
+        &::before {
+          content: "07";
+        }
+      }
+    }
+  }
+
+  &-content {
+    &.text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 24px;
+      width: 100%;
+      order: 2;
+
+      @include mixin.mq(sm) {
+        gap: 40px;
+      }
+
+      @include mixin.mq(md) {
+        order: 1;
+      }
+
+      @include mixin.mq(xsl) {
+      }
+
+      @include mixin.mq(xl) {
+        margin-top: 168px;
+        max-width: mixin.getVwNoRound(509, 1366);
+      }
+    }
+
+    &.image {
+      order: 1;
+
+      @include mixin.mq(md) {
+        order: 2;
+      }
+    }
+  }
+
+  &-label {
+    position: relative;
+    padding-left: 64px;
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    color: variables.$gray-a;
+
+    &::before {
+      @include mixin.inter(700, normal);
+
+      position: absolute;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      color: variables.$blue-c;
+      top: calc(0% - 12px);
+      left: calc(0% + 8px);
+      transform: translate(0%, 0%);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 64px;
+      height: 1px;
+      background-color: variables.$indigo-a;
+      top: 50%;
+      left: 0%;
+      transform: translate(0%, -50%) rotate(-45deg);
+    }
+  }
+
+  &-head {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: mixin.getVwNoRound(16, 320);
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    color: variables.$black-b;
+
+    @include mixin.mq(sm) {
+      font-size: 20px;
+    }
+
+    @include mixin.mq(xsl) {
+      font-size: 24px;
+    }
+  }
+
+  &-text {
+    @include mixin.noto-sans-jp(400);
+
+    font-size: 14px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    color: variables.$black-a;
+
+    .name {
+      color: white;
+      border-radius: 4px;
+      padding: 4px 16px;
+      font-weight: 700;
+      margin-right: 16px;
+      display: block;
+      margin-bottom: 16px;
+      width: fit-content;
+
+      &.o {
+        background-color: variables.$blue-c;
+      }
+
+      &.i {
+        background-color: variables.$blue-b;
+      }
+    }
+  }
+
+  &-image {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.message {
+  &-offset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-content {
+    display: flex;
+    width: 100%;
+
+    &.message {
+      flex-direction: column;
+      padding-top: 104px;
+      padding-bottom: 104px;
+    }
+
+    &.button {
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+      background-color: white;
+      padding-top: 40px;
+      padding-bottom: 168px;
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      .text {
+        color: variables.$indigo-a;
+      }
+
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  &-head {
+    @include mixin.inter(700, normal);
+
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    color: variables.$black-b;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: calc(100% - 16px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(md) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @include mixin.mq(xsl) {
+      width: 100%;
+    }
+  }
+
+  &-item {
+    align-self: center;
+
+    &-image {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    &-text {
+      width: 100%;
+      max-width: 400px;
+
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 16px;
+      line-height: 220%;
+      letter-spacing: 0.1em;
+      color: variables.$black-a;
+
+      @include mixin.mq(lg) {
+        max-width: 647px;
+      }
+
+      .name {
+        color: white;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-weight: 700;
+        margin-right: 16px;
+
+        &.o {
+          background-color: variables.$blue-c;
+        }
+
+        &.i {
+          background-color: variables.$blue-b;
+        }
+      }
+    }
+  }
+
+  &-button {
+    @extend %indigoSolidButton;
+  }
+}

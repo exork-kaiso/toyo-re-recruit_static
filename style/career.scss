@@ -1,0 +1,703 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.firstview {
+  &-content {
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 303px;
+    overflow: hidden;
+
+    @include mixin.mq(sm) {
+      height: 263px;
+    }
+
+    @include mixin.mq(md) {
+      width: 90vw;
+      height: 359px;
+    }
+
+    @include mixin.mq(lg) {
+      height: 407px;
+    }
+
+    @include mixin.mq(xsl) {
+      height: 608px;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 288px;
+
+    @include mixin.mq(sm) {
+      max-width: 65vw;
+    }
+
+    @include mixin.mq(md) {
+      gap: 24px;
+    }
+
+    @include mixin.mq(lg) {
+      top: 135px;
+    }
+
+    @include mixin.mq(xsl) {
+      top: 296px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      @include mixin.mq(md) {
+        font-size: 64px;
+      }
+      @include mixin.mq(xsl) {
+        font-size: 104px;
+      }
+      @include mixin.mq(xl) {
+        font-size: 120px;
+      }
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+    }
+  }
+}
+
+.realization {
+  &-container {
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    @include mixin.mq(md) {
+      width: 85vw;
+    }
+  }
+
+  &-head {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 24px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    color: variables.$black-a;
+    margin-bottom: 64px;
+
+    @include mixin.mq(md) {
+      font-size: 24px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &-description {
+    @include mixin.noto-sans-jp(400);
+
+    font-size: 16px;
+    line-height: 220%;
+    letter-spacing: 0.05em;
+    color: variables.$black-a;
+
+    .blue {
+      color: variables.$blue-c;
+      font-weight: 700;
+    }
+
+    @include mixin.mq(md) {
+      font-size: 16px;
+    }
+  }
+}
+
+.bg-container-ojt {
+  background-color: variables.$indigo-a;
+}
+
+.ojt {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include mixin.mq(sm) {
+      font-size: 24px;
+    }
+
+    @include mixin.mq(md) {
+      margin-bottom: 104px;
+    }
+
+    @include mixin.mq(lg) {
+      font-size: 40px;
+      line-height: 100%;
+    }
+  }
+
+  &-ideal {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @include mixin.mq(lg) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background-color: variables.$blue-a;
+      padding: 24px 16px;
+
+      @include mixin.mq(sm) {
+        gap: 40px;
+        padding: 40px;
+      }
+
+      @include mixin.mq(md) {
+        gap: 64px;
+        padding: 40px;
+      }
+    }
+
+    &-child {
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 24px;
+      }
+
+      &-item {
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 14px;
+        line-height: 175%;
+        letter-spacing: 0.1em;
+        text-align: left;
+        position: relative;
+
+        &::before {
+          content: "〇";
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(-24px, 0);
+        }
+
+        @include mixin.mq(sm) {
+          font-size: 16px;
+
+          line-height: 220%;
+        }
+      }
+    }
+
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 18px;
+      line-height: 150%;
+
+      color: variables.$black-a;
+
+      @include mixin.mq(sm) {
+        font-size: 24px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  &-tab {
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      color: variables.$black-a;
+
+      @include mixin.mq(sm) {
+        font-size: 24px;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 40px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-left: 40px;
+
+      @include mixin.mq(lg) {
+        gap: 40px;
+      }
+    }
+
+    &-item {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 14px;
+      line-height: 175%;
+      letter-spacing: 0.025em;
+      text-align: left;
+      position: relative;
+
+      &::before {
+        content: "〇";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-40px, 0);
+      }
+
+      @include mixin.mq(sm) {
+        font-size: 20px;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+      }
+    }
+
+    &-wrap {
+      text-align: center;
+      order: -1;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      border-radius: 6px 6px 0 0;
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 720px;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: white;
+        display: block;
+        order: -1;
+      }
+
+      @include mixin.mq(lg) {
+        max-width: 960px;
+      }
+
+      @include mixin.mq(xl) {
+        max-width: 1200px;
+      }
+    }
+
+    &-label {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: mixin.getVwNoRound(14, 320);
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      color: variables.$black-a;
+      padding: 24px 8px;
+      color: White;
+      background: variables.$blue-b;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+      text-align: center;
+      order: -1;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      flex: 1;
+      width: calc(50% - 0px);
+
+      @include mixin.mq(sm) {
+        font-size: 20px;
+        padding: 24px 8px;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+        padding: 24px 16px;
+      }
+
+      &:nth-child(odd) {
+        @include mixin.mq(sm) {
+          margin-left: 8px;
+        }
+      }
+
+      &:nth-child(even) {
+        @include mixin.mq(sm) {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &-label:not(:last-of-type) {
+      @include mixin.mq(sm) {
+        margin-right: 5px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* アクティブなタブ */
+    &-switch:checked + &-label {
+      background: white;
+      color: variables.$black-a;
+    }
+
+    &-switch:checked + &-label + &-content {
+      height: auto;
+      overflow: auto;
+      opacity: 1;
+      // transition: 0.5s opacity;
+
+      padding: 24px 16px;
+
+      @include mixin.mq(sm) {
+        gap: 40px;
+        padding: 40px;
+      }
+
+      @include mixin.mq(md) {
+        gap: 64px;
+        padding: 64px;
+      }
+    }
+
+    /* ラジオボタン非表示 */
+    &-switch {
+      display: none;
+    }
+  }
+}
+
+.people {
+  &-content {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  &-head {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 104px;
+
+    @include mixin.mq(md) {
+      font-size: 40px;
+    }
+  }
+}
+
+.points {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(xl) {
+      max-width: 1232px;
+    }
+  }
+
+  &-title {
+    @include mixin.noto-sans-jp(700);
+
+    font-size: 20px;
+    line-height: 175%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 64px;
+
+    @include mixin.mq(md) {
+      font-size: 40px;
+      line-height: 150%;
+      margin-bottom: 104px;
+    }
+  }
+
+  &-block {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 104px;
+      padding-bottom: 64px;
+
+      @include mixin.mq(md) {
+        padding-bottom: 168px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @include mixin.mq(md) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 40px;
+      }
+
+      @include mixin.mq(lg) {
+        gap: 64px;
+      }
+
+      @include mixin.mq(xsl) {
+        gap: 104px;
+      }
+
+      &:nth-of-type(1) {
+        .title {
+          &::before {
+            content: "01";
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .title {
+          &::before {
+            content: "02";
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .title {
+          &::before {
+            content: "03";
+          }
+        }
+      }
+
+      & > .image {
+        width: 100%;
+        max-width: 400px;
+
+        @include mixin.mq(md) {
+          max-width: 200px;
+        }
+
+        @include mixin.mq(lg) {
+          max-width: 400px;
+        }
+
+        & > img {
+          width: 100%;
+        }
+      }
+
+      & > .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include mixin.mq(md) {
+          width: calc(100% - 40px - 200px);
+          gap: 40px;
+        }
+
+        @include mixin.mq(lg) {
+          width: calc(100% - 64px - 400px);
+        }
+
+        @include mixin.mq(lg) {
+          width: calc(100% - 104px - 400px);
+        }
+      }
+
+      .title {
+        position: relative;
+        padding-left: 64px;
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        color: variables.$black-a;
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        @include mixin.mq(md) {
+          font-size: 24px;
+        }
+
+        &::before {
+          @include mixin.inter(700, normal);
+
+          position: absolute;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0.1em;
+          color: variables.$blue-c;
+          top: calc(0% - 12px);
+          left: calc(0% + 8px);
+          transform: translate(0%, 0%);
+
+          @include mixin.mq(md) {
+            top: calc(0% - 12px);
+          }
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 64px;
+          height: 1px;
+          background-color: variables.$indigo-a;
+          top: 50%;
+          left: 0%;
+          transform: translate(0%, -50%) rotate(-45deg);
+        }
+      }
+
+      .description {
+        @include mixin.noto-sans-jp(400);
+
+        font-size: 14px;
+        line-height: 220%;
+        letter-spacing: 0.1em;
+
+        @include mixin.mq(md) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &-message {
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background-color: variables.$blue-a;
+      padding: 24px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mixin.mq(md) {
+        padding: 40px;
+        gap: 64px;
+        max-width: 1200px;
+      }
+
+      @include mixin.mq(xsl) {
+        padding: 64px;
+      }
+    }
+
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 20px;
+      line-height: 175%;
+      letter-spacing: 0.1em;
+      text-align: center;
+
+      @include mixin.mq(md) {
+        font-size: 24px;
+      }
+
+      @include mixin.mq(lg) {
+        font-size: 40px;
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 220%;
+
+      @include mixin.mq(md) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

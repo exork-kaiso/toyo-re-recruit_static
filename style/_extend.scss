@@ -1,0 +1,137 @@
+@use "variables";
+@use "mixin";
+
+%image-block {
+  display: block;
+  width: 100%;
+}
+
+%firstview {
+  &Content {
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 100vw;
+
+    @include mixin.mq(sm) {
+      height: 440px;
+    }
+
+    @include mixin.mq(md) {
+      height: 637px;
+      margin-left: mixin.getVwNoRound(263, 1440);
+      margin-right: mixin.getVwNoRound(263, 1440);
+      width: calc(100% - mixin.getVwNoRound(526, 1440));
+    }
+  }
+
+  &Title {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include mixin.mq(sm) {
+      gap: 24px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: mixin.getVwNoRound(64, 320);
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      @include mixin.mq(md) {
+        font-size: mixin.getVwNoRound(120, 1440);
+      }
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 10px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      @include mixin.mq(md) {
+        font-size: mixin.getVwNoRound(16, 768);
+      }
+
+      @include mixin.mq(lg) {
+        font-size: mixin.getVwNoRound(16, 1440);
+      }
+    }
+  }
+}
+
+%indigoSolidButton {
+  @include mixin.inter(600, normal);
+
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  background-color: variables.$indigo-a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 40px;
+  width: 100%;
+  max-width: 332px;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  border: solid 2px variables.$indigo-a;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    transition-property: width;
+    transition-duration: 0.33s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover {
+    .text {
+      color: variables.$indigo-a;
+    }
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  .text {
+    color: white;
+    z-index: 5;
+    transition-property: color;
+    transition-duration: 0.33s;
+    transition-timing-function: ease-out;
+  }
+
+  .pict {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 24px;
+    color: variables.$indigo-a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid 1px variables.$indigo-a;
+    z-index: 5;
+  }
+}

@@ -1,0 +1,241 @@
+.message-firstview {
+  display: block;
+  width: 100%;
+}
+
+.firstview-content {
+  position: relative;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 320px;
+}
+@media screen and (min-width: 576px) {
+  .firstview-content {
+    height: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .firstview-content {
+    height: 465px;
+    margin-left: 18.2638888889vw;
+    margin-right: 18.2638888889vw;
+    width: calc(100% - 36.5277777778vw);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .firstview-content {
+    height: 671px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .firstview-content {
+    height: 832px;
+  }
+}
+.firstview-title {
+  position: absolute;
+  top: 87px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 288px;
+}
+@media screen and (min-width: 576px) {
+  .firstview-title {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .firstview-title {
+    max-width: inherit;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .firstview-title {
+    top: 135px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .firstview-title {
+    top: 296px;
+  }
+}
+.firstview-title .en {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #043d78;
+}
+@media screen and (min-width: 768px) {
+  .firstview-title .en {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .firstview-title .en {
+    font-size: 104px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .firstview-title .en {
+    font-size: 120px;
+  }
+}
+.firstview-title .jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #043d78;
+}
+
+.message-container {
+  padding-top: 129px;
+  padding-bottom: 168px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .message-container {
+    padding-top: 163px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .message-container {
+    padding-top: 263px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .message-container {
+    padding-top: 343px;
+  }
+}
+.message-firstview {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 290px;
+}
+@media screen and (min-width: 576px) {
+  .message-firstview {
+    width: 432px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .message-firstview {
+    top: -213px;
+    width: 673px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .message-firstview {
+    -webkit-transform: translate(calc(-50% - 182px), 0%);
+            transform: translate(calc(-50% - 182px), 0%);
+  }
+}
+.message-content {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 16px);
+  max-width: 290px;
+}
+@media screen and (min-width: 576px) {
+  .message-content {
+    margin-top: 104px;
+    max-width: 432px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .message-content {
+    max-width: 673px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .message-content {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .message-content {
+    max-width: 945px;
+  }
+}
+.message-lede {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  padding: 16px;
+  background-color: white;
+  width: 310px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, calc(0% + 104px));
+          transform: translate(-50%, calc(0% + 104px));
+}
+@media screen and (min-width: 576px) {
+  .message-lede {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-transform: translate(calc(-50% + 104px), calc(0% + 104px));
+            transform: translate(calc(-50% + 104px), calc(0% + 104px));
+  }
+}
+@media screen and (min-width: 768px) {
+  .message-lede {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    -webkit-transform: translate(calc(-50% + 70px), calc(0% + 104px));
+            transform: translate(calc(-50% + 70px), calc(0% + 104px));
+  }
+}
+.message-text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 220%;
+  letter-spacing: 0.05em;
+  margin-bottom: 64px;
+}
+.message-sign {
+  font-family: "BIZ UDMincho", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+@media screen and (min-width: 576px) {
+  .message-sign {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=message.css.map */

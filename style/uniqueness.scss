@@ -1,0 +1,945 @@
+@use "variables";
+@use "mixin";
+@use "extend";
+
+.firstview {
+  &-content {
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 320px;
+    overflow: hidden;
+
+    @include mixin.mq(sm) {
+      height: 375px;
+    }
+
+    @include mixin.mq(md) {
+      height: 465px;
+    }
+
+    @include mixin.mq(lg) {
+      height: 671px;
+    }
+
+    @include mixin.mq(xsl) {
+      height: 832px;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 288px;
+
+    @include mixin.mq(sm) {
+      max-width: 65vw;
+    }
+
+    @include mixin.mq(md) {
+      gap: 24px;
+    }
+
+    @include mixin.mq(lg) {
+      top: 135px;
+    }
+
+    @include mixin.mq(xsl) {
+      top: 296px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+
+      @include mixin.mq(md) {
+        font-size: 64px;
+      }
+
+      @include mixin.mq(lg) {
+        font-size: 104px;
+      }
+
+      @include mixin.mq(xsl) {
+        font-size: 120px;
+      }
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: variables.$indigo-a;
+    }
+  }
+}
+
+.uniqueness {
+  &-container {
+    margin-bottom: 64px;
+
+    @include mixin.mq(sm) {
+      margin-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &.eyecatch {
+      position: relative;
+      padding-top: 88px;
+      // background: blue;
+
+      @include mixin.mq(sm) {
+        padding-top: 106px;
+      }
+
+      @include mixin.mq(lg) {
+        padding-top: 207px;
+      }
+    }
+
+    &.section {
+      position: relative;
+      padding-top: 64px;
+      padding-bottom: 0px;
+
+      @include mixin.mq(sm) {
+        padding-top: 168px;
+      }
+
+      @include mixin.mq(md) {
+        gap: 64px;
+      }
+
+      &:nth-of-type(even) {
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          right: -16px;
+          transform: translate(0%, -50%);
+          width: 320px;
+          height: 385px;
+          background-color: variables.$blue-a;
+          z-index: -1;
+
+          @include mixin.mq(sm) {
+            width: 90vw;
+            right: calc(-17.5vw + 9px);
+            height: 408px;
+            top: calc(50% + 104px);
+          }
+
+          @include mixin.mq(md) {
+            height: 506px;
+            top: calc(50% + 90px);
+          }
+          @include mixin.mq(lg) {
+            height: 570px;
+          }
+          @include mixin.mq(xsl) {
+            width: 85vw;
+          }
+          @include mixin.mq(xl) {
+            width: 80vw;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .uniqueness-section-head {
+          &::before {
+            content: "01";
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: -16px;
+          transform: translate(0%, -50%);
+          width: 320px;
+          height: 385px;
+          background-color: variables.$blue-a;
+          z-index: -1;
+
+          @include mixin.mq(sm) {
+            width: 90vw;
+            left: -17.5vw;
+            height: 408px;
+            top: calc(50% + 104px);
+          }
+
+          @include mixin.mq(md) {
+            height: 506px;
+            top: calc(50% + 90px);
+          }
+          @include mixin.mq(lg) {
+            height: 570px;
+          }
+          @include mixin.mq(xsl) {
+            width: 85vw;
+          }
+          @include mixin.mq(xl) {
+            width: 80vw;
+          }
+        }
+
+        .uniqueness-section-head {
+          &::before {
+            content: "02";
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        .uniqueness-section-head {
+          &::before {
+            content: "03";
+          }
+        }
+      }
+    }
+
+    @include mixin.mq(sm) {
+      max-width: 65vw;
+    }
+
+    // @include mixin.mq(md) {}
+    // @include mixin.mq(lg) {}
+  }
+
+  &-image {
+    position: absolute;
+    width: 100%;
+    max-width: 288px;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(0% - (178px / 2)));
+
+    @include mixin.mq(sm) {
+      max-width: 345px;
+      left: 67%;
+      transform: translate(-50%, calc(0% - (213px / 2)));
+    }
+
+    @include mixin.mq(lg) {
+      max-width: 673px;
+      left: 67%;
+      transform: translate(-50%, calc(0% - (416px / 2)));
+    }
+
+    @include mixin.mq(xsl) {
+      left: 75%;
+    }
+  }
+
+  &-section {
+    &-head {
+      position: relative;
+      padding-left: 64px;
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.1em;
+
+      @include mixin.mq(md) {
+        font-size: 20px;
+      }
+      @include mixin.mq(lg) {
+        font-size: 24px;
+      }
+
+      &::before {
+        @include mixin.inter(700, normal);
+
+        position: absolute;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        color: variables.$blue-c;
+        top: calc(50% - 12px);
+        left: calc(0% + 8px);
+        transform: translate(0%, -50%);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 64px;
+        height: 1px;
+        background-color: variables.$indigo-a;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%) rotate(-45deg);
+      }
+    }
+
+    &-description {
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 14px;
+      line-height: 220%;
+      letter-spacing: 0.05em;
+      color: variables.$black-b;
+
+      @include mixin.mq(md) {
+        font-size: 16px;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      max-width: 647px;
+      align-self: center;
+    }
+  }
+}
+
+.compare {
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(sm) {
+      max-width: 82vw;
+    }
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+    text-align: center;
+
+    @include mixin.mq(sm) {
+      gap: 24px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &-table {
+    border-spacing: 8px;
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+    width: 860px;
+
+    @include mixin.mq(sm) {
+      width: 1312px;
+    }
+
+    th,
+    td {
+      padding: 8px 16px;
+
+      @include mixin.mq(sm) {
+        padding: 16px;
+      }
+    }
+
+    &-frame {
+    }
+  }
+
+  &-cell {
+    &-head {
+      @include mixin.noto-sans-jp(700);
+
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      background-color: variables.$black-b;
+      color: white;
+      width: 120px;
+      vertical-align: middle;
+      text-align: center;
+
+      @include mixin.mq(sm) {
+        font-size: 16px;
+        width: 160px;
+      }
+
+      @include mixin.mq(md) {
+        width: 208px;
+      }
+    }
+
+    &-normal {
+      background-color: variables.$gray-b;
+      width: 120px;
+
+      @include mixin.mq(sm) {
+        width: 272px;
+      }
+
+      &.header {
+        vertical-align: middle;
+        text-align: center;
+        font-size: 14px;
+
+        @include mixin.mq(sm) {
+          font-size: 16px;
+        }
+      }
+
+      .head {
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: variables.$black-b;
+        text-align: center;
+        padding: 16px 0;
+
+        @include mixin.mq(sm) {
+          font-size: 16px;
+          min-height: 72px;
+          margin-top: 8px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .description {
+        @include mixin.noto-sans-jp(400);
+
+        font-size: 10px;
+        line-height: 150%;
+        color: variables.$black-b;
+        text-align: left;
+
+        @include mixin.mq(sm) {
+          font-size: 13px;
+          line-height: 220%;
+          min-height: 172px;
+        }
+      }
+    }
+
+    &-toyo {
+      box-sizing: border-box;
+      border: solid 2px variables.$blue-d;
+      background-color: white;
+      width: 120px;
+      padding: 8px;
+
+      @include mixin.mq(sm) {
+        width: 400px;
+        padding: 24px;
+      }
+
+      &.header {
+        background-color: variables.$indigo-a;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .head {
+        @include mixin.noto-sans-jp(700);
+
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: variables.$blue-d;
+        margin-bottom: 40px;
+        text-align: center;
+
+        @include mixin.mq(sm) {
+          font-size: 24px;
+          min-height: 72px;
+        }
+
+        &.second {
+          padding-top: 8px;
+        }
+      }
+
+      .description {
+        @include mixin.noto-sans-jp(500);
+
+        font-size: 12px;
+        line-height: 150%;
+        color: variables.$black-b;
+        text-align: left;
+
+        @include mixin.mq(sm) {
+          font-size: 16px;
+          line-height: 220%;
+        }
+      }
+    }
+  }
+}
+
+.bg-container-glance {
+  background-color: variables.$blue-a;
+}
+
+.glance {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mixin.mq(md) {
+      padding-top: 168px;
+      padding-bottom: 168px;
+    }
+  }
+
+  &-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixin.mq(md) {
+      max-width: 85vw;
+    }
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+    text-align: center;
+
+    @include mixin.mq(sm) {
+      gap: 24px;
+    }
+
+    .en {
+      @include mixin.inter(700, normal);
+
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+    }
+
+    .jp {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-item {
+    width: calc(50% - 8px);
+    height: 270px;
+    background-color: white;
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    @include mixin.mq(sm) {
+      width: calc(50% - 8px);
+      height: 400px;
+    }
+
+    @include mixin.mq(xsl) {
+      width: calc(33% - 8px);
+    }
+
+    &.gi-01 {
+      background-image: url(../images/img_uniqueness_glance-01.svg);
+    }
+
+    &.gi-02 {
+      background-image: url(../images/img_uniqueness_glance-02.svg);
+    }
+
+    &.gi-03 {
+      background-image: url(../images/img_uniqueness_glance-03.svg);
+    }
+
+    &.gi-04 {
+      background-image: url(../images/img_uniqueness_glance-04.svg);
+    }
+
+    &.gi-05 {
+      background-image: url(../images/img_uniqueness_glance-05.svg);
+    }
+
+    &.gi-06 {
+      background-image: url(../images/img_uniqueness_glance-06.svg);
+    }
+
+    &.gi-07 {
+      background-image: url(../images/img_uniqueness_glance-07.svg);
+    }
+
+    &.gi-08 {
+      background-image: url(../images/img_uniqueness_glance-08.svg);
+    }
+
+    &.gi-09 {
+      background-image: url(../images/img_uniqueness_glance-09.svg);
+    }
+
+    &.gi-10 {
+      background-image: url(../images/img_uniqueness_glance-10.svg);
+    }
+
+    &.gi-11 {
+      background-image: url(../images/img_uniqueness_glance-11.svg);
+    }
+
+    &.gi-12 {
+      background-image: url(../images/img_uniqueness_glance-12.svg);
+    }
+
+    &.gi-13 {
+      background-image: url(../images/img_uniqueness_glance-13.svg);
+    }
+
+    &.gi-14 {
+      background-image: url(../images/img_uniqueness_glance-14.svg);
+    }
+
+    &.gi-15 {
+      background-image: url(../images/img_uniqueness_glance-15.svg);
+    }
+
+    &.gi-16 {
+      background-image: url(../images/img_uniqueness_glance-16.svg);
+    }
+
+    &.gi-17 {
+      background-image: url(../images/img_uniqueness_glance-17.svg);
+    }
+
+    &-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0px, 0px);
+
+      @include mixin.noto-sans-jp(500);
+
+      padding: 16px 8px;
+      background-color: variables.$blue-d;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      line-height: 150%;
+      width: 100%;
+
+      @include mixin.mq(sm) {
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        padding: 16px 40px;
+        width: fit-content;
+      }
+
+      @include mixin.mq(xsl) {
+        font-size: 24px;
+        padding: 16px mixin.getVwNoRound(24, 1440);
+      }
+    }
+
+    &-quote {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      transform: translate(0px, 0px);
+      color: variables.$gray-a;
+      text-align: right;
+      width: calc(100% - 32px);
+
+      @include mixin.noto-sans-jp(400);
+
+      font-size: 10px;
+      line-height: 175%;
+
+      &.up {
+        bottom: 54px;
+
+        @include mixin.mq(sm) {
+          bottom: 24px;
+          right: 64px;
+        }
+      }
+
+      @include mixin.mq(sm) {
+        right: 24px;
+        width: calc(100% - 64px);
+        bottom: 24px;
+      }
+
+      @include mixin.mq(md) {
+        font-size: 14px;
+        right: 24px;
+        width: calc(100% - 48px);
+      }
+
+      @include mixin.mq(xsl) {
+        font-size: 15px;
+      }
+
+      &.text-left {
+        text-align: left;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(0px, 0px);
+      background-color: variables.$blue-d;
+      color: white;
+      text-align: center;
+      width: 48px;
+      height: 48px;
+      @include mixin.inter(400, normal);
+
+      font-size: 24px;
+      line-height: 100%;
+
+      &::before {
+        position: absolute;
+        content: "+";
+        @include mixin.inter(400, normal);
+
+        font-size: 24px;
+        line-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &-dialog {
+    &-title {
+      @include mixin.noto-sans-jp(500);
+
+      font-size: 20px;
+      line-height: 175%;
+      letter-spacing: 0.1em;
+      color: variables.$gray-a;
+      text-align: center;
+    }
+
+    &-tab {
+      display: flex;
+      flex-wrap: wrap;
+
+      .tab {
+        &-label {
+          color: White;
+          background: variables.$blue-b;
+          padding: 3px 12px;
+          order: -1;
+
+          @include mixin.noto-sans-jp(700);
+
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0.05em;
+
+          width: calc(50% - 8px);
+          text-align: center;
+          padding: 16px;
+
+          @include mixin.mq(md) {
+            font-size: 24px;
+          }
+
+          &:first-of-type {
+            margin-right: 16px;
+          }
+        }
+
+        &-content {
+          width: 100%;
+          display: none;
+          box-sizing: border-box;
+          background-color: variables.$blue-a;
+          padding: 40px;
+          min-width: 66vw;
+          position: relative;
+
+          &.bg-08 {
+            &.east {
+              &::before {
+                top: 0;
+                transform: translate(0px, 0px);
+              }
+            }
+            &.west {
+              &::before {
+                top: 50%;
+                transform: translate(0px, calc(-50% - 0px));
+              }
+            }
+
+            &::before {
+              @include mixin.mq(md) {
+                content: "";
+                position: absolute;
+                right: 0;
+                width: 240px;
+                height: 240px;
+                background-image: url(../images/img_uniqueness_glance-image-08-bg.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+              }
+
+              @include mixin.mq(lg) {
+                width: 360px;
+                height: 360px;
+              }
+
+              @include mixin.mq(xsl) {
+                width: 450px;
+                height: 450px;
+              }
+            }
+          }
+        }
+
+        &-list {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 40px;
+
+          &-image {
+            width: fit-content;
+            max-width: 100%;
+          }
+        }
+      }
+
+      /* アクティブなタブ */
+      .tab-switch:checked + .tab-label {
+        background: variables.$blue-a;
+        color: variables.$black-a;
+      }
+
+      .tab-switch:checked + .tab-label + .tab-content {
+        display: block;
+      }
+
+      /* ラジオボタン非表示 */
+      .tab-switch {
+        display: none;
+      }
+    }
+
+    &-frame {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0px;
+
+      @include mixin.mq(sm) {
+        padding: 16px;
+      }
+
+      @include mixin.mq(md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+
+    &-image {
+      &.single {
+        width: 100%;
+      }
+
+      &.i9-1 {
+        max-width: 364px;
+      }
+
+      @include mixin.mq(md) {
+        // flex: 1;
+      }
+    }
+
+    &-close {
+      width: 146;
+      height: 48px;
+      background-image: url(../images/icon_uniqueness_glance-close.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+}
